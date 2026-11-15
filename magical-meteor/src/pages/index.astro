@@ -1,6 +1,7 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { getImage } from 'astro:assets';
 import ImageGallery, { type GalleryImage } from '../components/ImageGallery';
 import '../styles/global.css'; // Ensure Tailwind CSS is imported
 
@@ -13,14 +14,36 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true }
 );
 
+
+
 // 2. Transform the glob object into a clean array with extracted filenames
-const images: GalleryImage[] = Object.entries(imageModules).map(([path, module]) => {
-  const filename = path.split('/').pop() || '';
-  return {
-    src: module.default.src,
-    filename,
-  };
-});
+// const images: GalleryImage[] = Object.entries(imageModules).map(([path, module]) => {
+// const filename = path.split('/').pop() || '';
+//   return {
+//     src: module.default.src,
+//     filename,
+//   };
+// });
+
+// 2. Optimize each image with getImage() at build time
+const images: GalleryImage[] = await Promise.all(
+  Object.entries(imageModules).map(async ([path, mod]) => {
+    const optimized = await getImage({
+      src: mod.default,
+      width: 600, // Resize for square grid thumbnails
+      height: 600,
+      format: 'webp',
+    });
+
+    // Extract clean filename (e.g., "/src/assets/gallery/sunset.jpg" -> "sunset.jpg")
+    const filename = path.split('/').pop() ?? '';
+
+    return {
+      src: optimized.src,
+      filename,
+    };
+  })
+);
 
 // Log to your terminal (not browser console) during `npm run dev` to verify
 console.log('Found images:', images.length);
