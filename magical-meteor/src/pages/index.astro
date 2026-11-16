@@ -1,20 +1,18 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import { getImage } from 'astro:assets';
-import ImageGallery, { type GalleryImage } from '../components/ImageGallery';
-import '../styles/global.css'; // Ensure Tailwind CSS is imported
+// import Welcome from "../components/Welcome.astro";
+// import Layout from "../layouts/Layout.astro";
+import { getImage } from "astro:assets";
+import ImageGallery, { type GalleryImage } from "../components/ImageGallery";
+import "../styles/global.css"; // Ensure Tailwind CSS is imported
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 
 // 1. Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
-  '../assets/gallery/**/*.{jpeg,jpg,png,gif,webp,JPEG,JPG,PNG,WEBP}',
-  { eager: true }
+  "../assets/gallery-dev/**/*.{jpeg,jpg,png,gif,webp,JPEG,JPG,PNG,WEBP}",
+  { eager: true },
 );
-
-
 
 // 2. Transform the glob object into a clean array with extracted filenames
 // const images: GalleryImage[] = Object.entries(imageModules).map(([path, module]) => {
@@ -30,36 +28,37 @@ const images: GalleryImage[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({
       src: mod.default,
-      width: 600, // Resize for square grid thumbnails
+      width: 600,
       height: 600,
-      format: 'webp',
+      format: "webp",
     });
 
     // Extract clean filename (e.g., "/src/assets/gallery/sunset.jpg" -> "sunset.jpg")
-    const filename = path.split('/').pop() ?? '';
+    const filename = path.split("/").pop() ?? "";
+
+    console.log(`Optimized image: ${filename}`);
 
     return {
       src: optimized.src,
       filename,
     };
-  })
+  }),
 );
 
 // Log to your terminal (not browser console) during `npm run dev` to verify
-console.log('Found images:', images.length);
-
+console.log("Found images:", images.length);
+console.log("Example:", images[0]);
 
 // <Layout>
 // 	<Welcome />
 // </Layout>
-
 ---
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 class="text-3xl font-bold tracking-tight mb-8">Image Gallery</h1>
-      
-      <!-- Hydrate React component on the client -->
-      <ImageGallery client:load images={images} />
-    </main>
-  </body>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl font-bold tracking-tight mb-8">Image Gallery</h1>
+
+    <!-- Hydrate React component on the client -->
+    <ImageGallery client:load images={images} />
+  </main>
+</body>
