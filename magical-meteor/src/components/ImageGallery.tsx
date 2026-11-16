@@ -3,6 +3,8 @@ import React, { useState } from "react";
 export interface GalleryImage {
   src: string;
   filename: string;
+  name?: string;
+  id: string;
 }
 
 interface Props {
@@ -52,9 +54,9 @@ export default function ImageGallery({ images }: Props) {
               <div className="p-3">
                 <p
                   className="truncate text-sm font-medium text-gray-700"
-                  title={img.filename}
+                  title={img.id}
                 >
-                  {img.filename}
+                  {img.name}
                 </p>
               </div>
             </div>
