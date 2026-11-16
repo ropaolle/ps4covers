@@ -8,22 +8,14 @@ import "../styles/global.css"; // Ensure Tailwind CSS is imported
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 
-// 1. Import all images from src/assets/gallery
+// Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/gallery-dev/**/*.{jpeg,jpg,png,gif,webp,JPEG,JPG,PNG,WEBP}",
   { eager: true },
 );
 
-// 2. Transform the glob object into a clean array with extracted filenames
-// const images: GalleryImage[] = Object.entries(imageModules).map(([path, module]) => {
-// const filename = path.split('/').pop() || '';
-//   return {
-//     src: module.default.src,
-//     filename,
-//   };
-// });
 
-// 2. Optimize each image with getImage() at build time
+// Optimize each image with getImage() at build time
 const images: GalleryImage[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({
