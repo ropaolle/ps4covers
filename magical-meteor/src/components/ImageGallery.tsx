@@ -5,10 +5,21 @@ export interface GalleryImage {
   filename: string;
   name?: string;
   id: string;
+  size: number
 }
 
 interface Props {
   images: GalleryImage[];
+}
+
+function formatBytes(bytes: number, decimals = 2) {
+  if (bytes === 0) return '0 Bytes';
+
+  const k = 1024; // Change to 1000 for decimal units
+  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+  return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
 }
 
 export default function ImageGallery({ images }: Props) {
@@ -56,7 +67,7 @@ export default function ImageGallery({ images }: Props) {
                   className="truncate text-sm font-medium text-gray-700"
                   title={img.id}
                 >
-                  {img.name}
+                  {img.name} ({formatBytes(img.size)})
                 </p>
               </div>
             </div>
