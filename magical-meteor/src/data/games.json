@@ -1204,6 +1204,20 @@
     "comment": null
   },
   {
+    "name": "Inscryption",
+    "alt_name": "Inscryption",
+    "id": "CUSA32884",
+    "size": 4661641216,
+    "genre": "Card Battle",
+    "backup": "DS920",
+    "owner": null,
+    "played": null,
+    "latest_update": "01.02",
+    "tested": "OK",
+    "dlcs": null,
+    "comment": null
+  },
+  {
     "name": "INSIDE",
     "alt_name": "INSIDE",
     "id": "CUSA02754",
@@ -1213,6 +1227,20 @@
     "owner": "Ja",
     "played": null,
     "latest_update": "01.00",
+    "tested": "OK",
+    "dlcs": null,
+    "comment": null
+  },
+  {
+    "name": "It Takes Two",
+    "alt_name": "It Takes Two",
+    "id": "CUSA16742",
+    "size": 36869832704,
+    "genre": "Linear Action Adventure",
+    "backup": "DS919",
+    "owner": null,
+    "played": null,
+    "latest_update": "01.03",
     "tested": "OK",
     "dlcs": null,
     "comment": null
@@ -2642,34 +2670,6 @@
     "played": null,
     "latest_update": "01.03",
     "tested": "OK",
-    "dlcs": null,
-    "comment": null
-  },
-  {
-    "name": "It Takes Two",
-    "alt_name": "It Takes Two",
-    "id": "U",
-    "size": null,
-    "genre": "Linear Action Adventure",
-    "backup": null,
-    "owner": null,
-    "played": null,
-    "latest_update": null,
-    "tested": null,
-    "dlcs": null,
-    "comment": null
-  },
-  {
-    "name": "Inscryption",
-    "alt_name": "Inscryption",
-    "id": "U",
-    "size": null,
-    "genre": "Card Battle",
-    "backup": null,
-    "owner": null,
-    "played": null,
-    "latest_update": null,
-    "tested": null,
     "dlcs": null,
     "comment": null
   }
