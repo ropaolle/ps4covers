@@ -37,11 +37,10 @@ const images: GalleryImage[] = await Promise.all(
     return {
       src: optimized.src,
       filename,
-      id
+      id,
     };
   }),
 );
-
 
 const genres = new Set();
 
@@ -49,10 +48,12 @@ const genres = new Set();
 const imageMap = new Map(images.map((image) => [image.id, image]));
 const gameList = games.map((game) => {
   const match = imageMap.get(game.id);
-  const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");  
+  const pkgInfo = manifest.Entries.find(
+    (entry) => entry.TitleId === game.id && entry.Category === "Game",
+  );
 
   genres.add(game.genre);
-  
+
   if (!match) {
     console.warn(`WARNING: No matching image found for game ID: ${game.id}`);
   }
@@ -67,7 +68,6 @@ const gameList = games.map((game) => {
 console.log("INFO: Found images:", images.length);
 console.log(gameList[0]);
 console.log(genres);
-
 ---
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">
@@ -78,5 +78,3 @@ console.log(genres);
     <GameView client:load images={gameList} />
   </main>
 </body>
-
-

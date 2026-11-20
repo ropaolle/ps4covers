@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 // FIXA: Type, borde heta Game och Games
 export interface GalleryImage {
   src: string;
@@ -28,11 +27,14 @@ export default function GameView({ images }: Props) {
   const [query, setQuery] = useState("");
 
   // Filter images case-insensitively based on the filename
-  const filteredImages = images.filter((img) =>
-    // img.name.toLowerCase().includes(query.toLowerCase().trim()),
-    img.genre.toLowerCase().includes(query.toLowerCase().trim()) || img.name.toLowerCase().includes(query.toLowerCase().trim()),
+  const filteredImages = images.filter(
+    (img) =>
+      // img.name.toLowerCase().includes(query.toLowerCase().trim()),
+      img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
+      img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
 
+  const getUpdateINfo = (img: GalleryImage) => {};
 
   return (
     <div className="space-y-6">
@@ -62,7 +64,6 @@ export default function GameView({ images }: Props) {
                 <img
                   src={img.src}
                   alt={img.filename}
-                  
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -71,8 +72,35 @@ export default function GameView({ images }: Props) {
                     className="text-right font-medium text-xl text-black"
                     title={`${img.version} (latest ${img.pkgInfo?.LatestUpdate})`}
                   >
-                    {img.pkgInfo?.LatestUpdate > img.version ? "⚠️" : ""}
+                    {img.pkgInfo?.LatestUpdate !== "No Update" &&
+                    img.pkgInfo?.LatestUpdate > img.version
+                      ? "⚠️"
+                      : ""}
                   </p>
+                  {img.dlcs && (
+                    <p
+                      className="text-right font-medium text-xl text-black"
+                      title={`${img.dlcs}`}
+                    >
+                      📦
+                    </p>
+                  )}
+                  {img.backup && (
+                    <p
+                      className="text-right font-medium text-xl text-black"
+                      title={`${img.backup}`}
+                    >
+                      💾
+                    </p>
+                  )}
+                  {img.owner && (
+                    <p
+                      className="text-right font-medium text-xl text-black"
+                      title="Köpt"
+                    >
+                      💳
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="p-3">
@@ -84,12 +112,6 @@ export default function GameView({ images }: Props) {
                 </p>
               </div>
               <div className="p-3">
-                {/* <p
-                  className="truncate text-sm font-medium text-gray-700"
-                  title={img.id}
-                >
-                  {img.genre}
-                </p> */}
                 <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
                   🏷️ {img.genre}
                 </span>
