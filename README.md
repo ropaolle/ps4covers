@@ -31,3 +31,15 @@ source venv/bin/activate
 # pip install psnawp requests
 python dlps4.py
 ```
+
+<!-- CUSA00315
+CUSA00473
+CUSA07737
+CUSA11454
+CUSA16164
+CUSA24769
+CUSA31579
+CUSA34384
+CUSA42371
+SCUS94221
+SLUS21397 -->

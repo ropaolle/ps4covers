@@ -4,7 +4,7 @@
 import { getImage } from "astro:assets";
 import ImageGallery, { type GalleryImage } from "../components/ImageGallery";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
-import games from '../data/games.json';
+import games from "../data/games.json";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -20,17 +20,31 @@ const images: GalleryImage[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({
       src: mod.default,
-      width: 600,
-      height: 600,
+      // width: 1600,
+      // height: 1600,
       format: "webp",
     });
-
-
 
     // Extract clean filename (e.g., "/src/assets/gallery/CUSA00010.jpg" -> "CUSA00010.jpg")
     const filename = path.split("/").pop() ?? "";
     const id = filename.slice(0, -4);
     const name = games.find((game) => game.id === id)?.alt_name;
+
+    // if (optimized.attributes.width < 1024) {
+    //   console.log(`${filename} -> ${optimized.attributes.width}`);
+    // }
+
+    // CUSA00315.jpg -> 800
+    // CUSA00473.jpg -> 800
+    // CUSA07737.jpg -> 800
+    // CUSA11454.jpg -> 800
+    // CUSA16164.jpg -> 800
+    // CUSA24769.jpg -> 800
+    // CUSA31579.jpg -> 800
+    // CUSA34384.jpg -> 800
+    // CUSA42371.jpg -> 800
+    // SCUS94221.jpg -> 788
+    // SLUS21397.jpg -> 800
 
     // console.log(`Optimized image: ${filename} -> ${id}`);
 
@@ -43,9 +57,8 @@ const images: GalleryImage[] = await Promise.all(
   }),
 );
 
-
 // const srcMap = new Map(images.map(image => [image.id, image.src]));
-const imageMap = new Map(images.map(image => [image.id, image]));
+const imageMap = new Map(images.map((image) => [image.id, image]));
 
 // console.log(imageMap)
 
@@ -54,29 +67,24 @@ const imageMap = new Map(images.map(image => [image.id, image]));
 //   src: srcMap.get(game.id) || null // Ger null (eller undefined) om id saknas i lista1
 // }));
 
-
 // 1. Spara hela objektet i Map med id som nyckel
 // const itemMap = new Map(lista1.map(item => [item.id, item]));
 
-
 // 2. Slå ihop objekten med spread-operatorn (...)
-const uppdateradLista = games.map(game => {
+const uppdateradLista = games.map((game) => {
   const match = imageMap.get(game.id);
-  
+
   if (!match) {
     console.warn(`No matching image found for game ID: ${game.id}`);
   }
-   
 
   return {
     ...game,
-    ...(match || { src: null, filename: "" }) // Använder standardvärden om match saknas
+    ...(match || { src: null, filename: "" }), // Använder standardvärden om match saknas
   };
 });
 
-
 // console.log(uppdateradLista[0])
-
 
 // Log to your terminal (not browser console) during `npm run dev` to verify
 console.log("Found images:", images.length);
