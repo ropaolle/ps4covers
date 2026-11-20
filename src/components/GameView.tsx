@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+// FIXA: Type, borde heta Game och Games
 export interface GalleryImage {
   src: string;
   filename: string;
@@ -22,13 +24,15 @@ function formatBytes(bytes: number, decimals = 2) {
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
 }
 
-export default function ImageGallery({ images }: Props) {
+export default function GameView({ images }: Props) {
   const [query, setQuery] = useState("");
 
   // Filter images case-insensitively based on the filename
   const filteredImages = images.filter((img) =>
-    img.name.toLowerCase().includes(query.toLowerCase().trim()),
+    // img.name.toLowerCase().includes(query.toLowerCase().trim()),
+    img.genre.toLowerCase().includes(query.toLowerCase().trim()) || img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
+
 
   return (
     <div className="space-y-6">
@@ -38,7 +42,7 @@ export default function ImageGallery({ images }: Props) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Filter by filename (e.g. sunset, forest)..."
+          placeholder="Filter by name and tag..."
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
         <p className="text-sm text-gray-500">
@@ -58,19 +62,23 @@ export default function ImageGallery({ images }: Props) {
                 <img
                   src={img.src}
                   alt={img.filename}
+                  
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 flex items-end justify-end p-4">
-                  <p className="text-right font-small text-black">
-                    {img.pkgInfo?.LatestUpdate}
+                  <p
+                    className="text-right font-medium text-xl text-black"
+                    title={`${img.version} (latest ${img.pkgInfo?.LatestUpdate})`}
+                  >
+                    {img.pkgInfo?.LatestUpdate > img.version ? "⚠️" : ""}
                   </p>
                 </div>
               </div>
               <div className="p-3">
                 <p
                   className="truncate text-sm font-medium text-gray-700"
-                  title={img.id}
+                  title={JSON.stringify(img)}
                 >
                   {img.name} ({formatBytes(img.size)})
                 </p>
@@ -83,7 +91,7 @@ export default function ImageGallery({ images }: Props) {
                   {img.genre}
                 </p> */}
                 <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                   {img.genre}
+                  🏷️ {img.genre}
                 </span>
               </div>
             </div>

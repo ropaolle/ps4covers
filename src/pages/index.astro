@@ -2,7 +2,7 @@
 // import Welcome from "../components/Welcome.astro";
 // import Layout from "../layouts/Layout.astro";
 import { getImage } from "astro:assets";
-import ImageGallery, { type GalleryImage } from "../components/ImageGallery";
+import GameView, { type GalleryImage } from "../components/GameView";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
 import games from "../data/games.json";
 import manifest from "../data/manifest.json";
@@ -43,11 +43,15 @@ const images: GalleryImage[] = await Promise.all(
 );
 
 
+const genres = new Set();
+
 // Merge images and games
 const imageMap = new Map(images.map((image) => [image.id, image]));
 const gameList = games.map((game) => {
   const match = imageMap.get(game.id);
   const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");  
+
+  genres.add(game.genre);
   
   if (!match) {
     console.warn(`WARNING: No matching image found for game ID: ${game.id}`);
@@ -61,15 +65,17 @@ const gameList = games.map((game) => {
 });
 
 console.log("INFO: Found images:", images.length);
+console.log(gameList[0]);
+console.log(genres);
 
 ---
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-3xl font-bold tracking-tight mb-8">Image Gallery</h1>
+    <h1 class="text-3xl font-bold tracking-tight mb-8">PS4 Games</h1>
 
     <!-- Hydrate React component on the client -->
-    <ImageGallery client:load images={gameList} />
+    <GameView client:load images={gameList} />
   </main>
 </body>
 
