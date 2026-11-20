@@ -5,6 +5,7 @@ import { getImage } from "astro:assets";
 import ImageGallery, { type GalleryImage } from "../components/ImageGallery";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
 import games from "../data/games.json";
+import manifest from "../data/manifest.json";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -20,65 +21,47 @@ const images: GalleryImage[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({
       src: mod.default,
-      // width: 1600,
-      // height: 1600,
+      width: 600,
+      height: 600,
       format: "webp",
     });
 
     // Extract clean filename (e.g., "/src/assets/gallery/CUSA00010.jpg" -> "CUSA00010.jpg")
     const filename = path.split("/").pop() ?? "";
     const id = filename.slice(0, -4);
-    const name = games.find((game) => game.id === id)?.name;
 
-    if (optimized.attributes.width < 1024) {
-      console.log(`${filename} -> ${optimized.attributes.width}`);
-    }
+    // if (optimized.attributes.width < 1024) {
+    //   console.warn(`WARNING: Image smaller then 1024px ${filename} -> ${optimized.attributes.width}px`);
+    // }
 
     return {
       src: optimized.src,
       filename,
-      id,
-      name,
+      id
     };
   }),
 );
 
-// const srcMap = new Map(images.map(image => [image.id, image.src]));
+
+// Merge images and games
 const imageMap = new Map(images.map((image) => [image.id, image]));
-
-// console.log(imageMap)
-
-// const uppdateradLista = games.map(game => ({
-//   ...game,
-//   src: srcMap.get(game.id) || null // Ger null (eller undefined) om id saknas i lista1
-// }));
-
-// 1. Spara hela objektet i Map med id som nyckel
-// const itemMap = new Map(lista1.map(item => [item.id, item]));
-
-// 2. Slå ihop objekten med spread-operatorn (...)
-const uppdateradLista = games.map((game) => {
+const gameList = games.map((game) => {
   const match = imageMap.get(game.id);
-
+  const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");  
+  
   if (!match) {
-    console.warn(`No matching image found for game ID: ${game.id}`);
+    console.warn(`WARNING: No matching image found for game ID: ${game.id}`);
   }
 
   return {
     ...game,
+    pkgInfo,
     ...(match || { src: null, filename: "" }), // Använder standardvärden om match saknas
   };
 });
 
-// console.log(uppdateradLista[0])
+console.log("INFO: Found images:", images.length);
 
-// Log to your terminal (not browser console) during `npm run dev` to verify
-console.log("Found images:", images.length);
-// console.log("Example:", images[0]);
-
-// <Layout>
-// 	<Welcome />
-// </Layout>
 ---
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">
@@ -86,6 +69,8 @@ console.log("Found images:", images.length);
     <h1 class="text-3xl font-bold tracking-tight mb-8">Image Gallery</h1>
 
     <!-- Hydrate React component on the client -->
-    <ImageGallery client:load images={uppdateradLista} />
+    <ImageGallery client:load images={gameList} />
   </main>
 </body>
+
+

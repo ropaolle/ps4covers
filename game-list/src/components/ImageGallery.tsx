@@ -5,7 +5,7 @@ export interface GalleryImage {
   filename: string;
   name?: string;
   id: string;
-  size: number
+  size: number;
 }
 
 interface Props {
@@ -13,10 +13,10 @@ interface Props {
 }
 
 function formatBytes(bytes: number, decimals = 2) {
-  if (bytes === 0) return '0 Bytes';
+  if (bytes === 0) return "0 Bytes";
 
   const k = 1024; // Change to 1000 for decimal units
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+  const sizes = ["Bytes", "KB", "MB", "GB", "TB"];
   const i = Math.floor(Math.log(bytes) / Math.log(k));
 
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
@@ -27,7 +27,7 @@ export default function ImageGallery({ images }: Props) {
 
   // Filter images case-insensitively based on the filename
   const filteredImages = images.filter((img) =>
-    img.filename.toLowerCase().includes(query.toLowerCase().trim()),
+    img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
 
   return (
@@ -54,13 +54,18 @@ export default function ImageGallery({ images }: Props) {
               key={img.src}
               className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md"
             >
-              <div className="aspect-square overflow-hidden bg-gray-100">
+              <div className="relative aspect-square overflow-hidden bg-gray-100">
                 <img
                   src={img.src}
                   alt={img.filename}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 flex items-end justify-end p-4">
+                  <p className="text-right font-small text-black">
+                    {img.pkgInfo?.LatestUpdate}
+                  </p>
+                </div>
               </div>
               <div className="p-3">
                 <p
@@ -69,6 +74,17 @@ export default function ImageGallery({ images }: Props) {
                 >
                   {img.name} ({formatBytes(img.size)})
                 </p>
+              </div>
+              <div className="p-3">
+                {/* <p
+                  className="truncate text-sm font-medium text-gray-700"
+                  title={img.id}
+                >
+                  {img.genre}
+                </p> */}
+                <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                   {img.genre}
+                </span>
               </div>
             </div>
           ))}
