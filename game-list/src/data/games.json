@@ -1,7 +1,6 @@
 [
   {
     "name": "A Plague Tale: Innocence PS4",
-    "alt_name": "A Plague Tale: Innocence PS4",
     "id": "CUSA10812",
     "size": 37326553088,
     "genre": "Liner Action Adventure",
@@ -15,7 +14,6 @@
   },
   {
     "name": "ABZU",
-    "alt_name": "ABZU",
     "id": "CUSA03364",
     "size": 2311192576,
     "genre": "Third-Person Adventure",
@@ -29,7 +27,6 @@
   },
   {
     "name": "Anodyne",
-    "alt_name": "Anodyne",
     "id": "CUSA05869",
     "size": 213843968,
     "genre": "Open-World Action",
@@ -42,8 +39,7 @@
     "comment": null
   },
   {
-    "name": "Assassin’s Creed® Chronicles Trilogy",
-    "alt_name": "Assassin's Creed Chronicles Trilogy",
+    "name": "Assassin's Creed Chronicles Trilogy",
     "id": "CUSA03440",
     "size": 11250958336,
     "genre": "Linear Action Adventure",
@@ -56,8 +52,7 @@
     "comment": null
   },
   {
-    "name": "Assassin's Creed® IV Black Flag",
-    "alt_name": "Assassin's Creed IV Black Flag",
+    "name": "Assassin's Creed IV Black Flag",
     "id": "CUSA00010",
     "size": 18676449280,
     "genre": "Open-World Action",
@@ -70,8 +65,7 @@
     "comment": null
   },
   {
-    "name": "Assassin's Creed® Mirage",
-    "alt_name": "Assassin's Creed Mirage",
+    "name": "Assassin's Creed Mirage",
     "id": "CUSA33151",
     "size": 40801009664,
     "genre": "Open-World Action",
@@ -84,8 +78,7 @@
     "comment": null
   },
   {
-    "name": "Assassin's Creed® Odyssey",
-    "alt_name": "Assassin's Creed Odyssey",
+    "name": "Assassin's Creed Odyssey",
     "id": "CUSA09311",
     "size": 77751844864,
     "genre": "Open-World Action",
@@ -98,8 +91,7 @@
     "comment": null
   },
   {
-    "name": "Assassin's Creed® Origins",
-    "alt_name": "Assassin's Creed Origins",
+    "name": "Assassin's Creed Origins",
     "id": "CUSA05625",
     "size": 72560017408,
     "genre": "Open-World Action",
@@ -112,8 +104,7 @@
     "comment": null
   },
   {
-    "name": "Assassin's Creed® Valhalla",
-    "alt_name": "Assassin's Creed Valhalla",
+    "name": "Assassin's Creed Valhalla",
     "id": "CUSA18522",
     "size": 96965951488,
     "genre": "Open-World Action",
@@ -127,7 +118,6 @@
   },
   {
     "name": "Bad North",
-    "alt_name": "Bad North",
     "id": "CUSA10606",
     "size": 599064576,
     "genre": "Real-Time Strategy",
@@ -141,7 +131,6 @@
   },
   {
     "name": "BADLAND: Game of the Year Edition",
-    "alt_name": "BADLAND: Game of the Year Edition",
     "id": "CUSA01414",
     "size": 230490112,
     "genre": "Linear Action Adventure",
@@ -155,7 +144,6 @@
   },
   {
     "name": "Baltro",
-    "alt_name": "Baltro",
     "id": "CUSA47498",
     "size": 273678336,
     "genre": "Card Battle",
@@ -168,8 +156,7 @@
     "comment": null
   },
   {
-    "name": "BATMAN™: ARKHAM KNIGHT",
-    "alt_name": "BATMAN: ARKHAM KNIGHT",
+    "name": "BATMAN: ARKHAM KNIGHT",
     "id": "CUSA01764",
     "size": 48094052352,
     "genre": "Open-World Action",
@@ -183,7 +170,6 @@
   },
   {
     "name": "BioShock: The Collection",
-    "alt_name": "BioShock: The Collection",
     "id": "CUSA03985",
     "size": 22231777280,
     "genre": "FPS",
@@ -197,7 +183,6 @@
   },
   {
     "name": "Borderlands: The Handsome Collection",
-    "alt_name": "Borderlands: The Handsome Collection",
     "id": "CUSA01401",
     "size": 40516452352,
     "genre": "FPS",
@@ -211,7 +196,6 @@
   },
   {
     "name": "Broken Sword 5 - the Serpent's Curse",
-    "alt_name": "Broken Sword 5 - the Serpent's Curse",
     "id": "CUSA02500",
     "size": 5140250624,
     "genre": "Point-and-Click",
@@ -225,7 +209,6 @@
   },
   {
     "name": "Castlevania Requiem: Symphony Of The Night & Rondo Of Blood",
-    "alt_name": "Castlevania Requiem: Symphony Of The Night & Rondo Of Blood",
     "id": "CUSA13434",
     "size": 1328152576,
     "genre": "Metroidvania",
@@ -239,7 +222,6 @@
   },
   {
     "name": "Celeste",
-    "alt_name": "Celeste",
     "id": "CUSA11302",
     "size": 1618804736,
     "genre": "2D Platformer",
@@ -253,7 +235,6 @@
   },
   {
     "name": "Chained Echoes",
-    "alt_name": "Chained Echoes",
     "id": "CUSA29547",
     "size": 1103233024,
     "genre": "JRPG",
@@ -267,7 +248,6 @@
   },
   {
     "name": "Chaos on Deponia",
-    "alt_name": "Chaos on Deponia",
     "id": "CUSA08542",
     "size": 1763442688,
     "genre": "Point-and-Click",
@@ -281,7 +261,6 @@
   },
   {
     "name": "Child of Light",
-    "alt_name": "Child of Light",
     "id": "CUSA00339",
     "size": 2301820928,
     "genre": "RPG",
@@ -295,7 +274,6 @@
   },
   {
     "name": "Children of Zodiarcs",
-    "alt_name": "Children of Zodiarcs",
     "id": "CUSA08336",
     "size": 2050490368,
     "genre": "JRPG",
@@ -309,7 +287,6 @@
   },
   {
     "name": "Chronicles of Teddy: Harmony of Exidus",
-    "alt_name": "Chronicles of Teddy: Harmony of Exidus",
     "id": "CUSA03328",
     "size": 305463296,
     "genre": "Metroidvania",
@@ -323,7 +300,6 @@
   },
   {
     "name": "Concrete Genie",
-    "alt_name": "Concrete Genie",
     "id": "CUSA11834",
     "size": 15997992960,
     "genre": "Third-Person Adventure",
@@ -337,7 +313,6 @@
   },
   {
     "name": "Control",
-    "alt_name": "Control",
     "id": "CUSA11454",
     "size": 38563020800,
     "genre": "Action Adventure",
@@ -351,7 +326,6 @@
   },
   {
     "name": "Cosmic Star Heroine",
-    "alt_name": "Cosmic Star Heroine",
     "id": "CUSA03167",
     "size": 3282894848,
     "genre": "JRPG",
@@ -365,7 +339,6 @@
   },
   {
     "name": "Crash Bandicoot: N-Sane Trilogy",
-    "alt_name": "Crash Bandicoot: N-Sane Trilogy",
     "id": "CUSA07399",
     "size": 23447928832,
     "genre": "2D Platformer, 3D Platformer",
@@ -378,8 +351,7 @@
     "comment": null
   },
   {
-    "name": "Crash Bandicoot™ 4: It's About Time",
-    "alt_name": "Crash Bandicoot 4: It's About Time",
+    "name": "Crash Bandicoot 4: It's About Time",
     "id": "CUSA23470",
     "size": 45241729024,
     "genre": "3D Platformer",
@@ -393,7 +365,6 @@
   },
   {
     "name": "Cult of the Lamb",
-    "alt_name": "Cult of the Lamb",
     "id": "CUSA32184",
     "size": 5485035520,
     "genre": "RPG",
@@ -407,7 +378,6 @@
   },
   {
     "name": "Cyberpunk 2077",
-    "alt_name": "Cyberpunk 2077",
     "id": "CUSA16596",
     "size": 66900525056,
     "genre": "Action RPG",
@@ -421,7 +391,6 @@
   },
   {
     "name": "DAVE THE DIVER",
-    "alt_name": "DAVE THE DIVER",
     "id": "CUSA45600",
     "size": 5650317312,
     "genre": "Action Adventure",
@@ -435,7 +404,6 @@
   },
   {
     "name": "Days Gone",
-    "alt_name": "Days Gone",
     "id": "CUSA09175",
     "size": 43998642176,
     "genre": "Open-World Action",
@@ -449,7 +417,6 @@
   },
   {
     "name": "DEATH STRANDING",
-    "alt_name": "DEATH STRANDING",
     "id": "CUSA11260",
     "size": 49264525312,
     "genre": "Open-World Action",
@@ -463,7 +430,6 @@
   },
   {
     "name": "Death's Door",
-    "alt_name": "Death's Door",
     "id": "CUSA30423",
     "size": 1452736512,
     "genre": "Action Adventure",
@@ -477,7 +443,6 @@
   },
   {
     "name": "DELTARUNE Chapter 1",
-    "alt_name": "DELTARUNE Chapter 1",
     "id": "CUSA15235",
     "size": 2046689,
     "genre": "JRPG",
@@ -490,8 +455,7 @@
     "comment": null
   },
   {
-    "name": "Detroit: Become Human™",
-    "alt_name": "Detroit: Become Human",
+    "name": "Detroit: Become Human",
     "id": "CUSA08344",
     "size": 43060625408,
     "genre": "Third-Person Adventure",
@@ -504,8 +468,7 @@
     "comment": null
   },
   {
-    "name": "Deus Ex: Mankind Divided™",
-    "alt_name": "Deus Ex: Mankind Divided",
+    "name": "Deus Ex: Mankind Divided",
     "id": "CUSA01799",
     "size": 59466776576,
     "genre": "Action Adventure",
@@ -519,7 +482,6 @@
   },
   {
     "name": "Disgaea - Hour of Darkness",
-    "alt_name": "Disgaea - Hour of Darkness",
     "id": "SLUS20666",
     "size": 586022912,
     "genre": "Turn-Based Tactics",
@@ -533,7 +495,6 @@
   },
   {
     "name": "Disgaea 2 - Cursed Memories",
-    "alt_name": "Disgaea 2 - Cursed Memories",
     "id": "SLUS21397",
     "size": 1120206848,
     "genre": "Turn-Based Tactics",
@@ -547,7 +508,6 @@
   },
   {
     "name": "Disgaea 5: Alliance of Vengeance",
-    "alt_name": "Disgaea 5: Alliance of Vengeance",
     "id": "CUSA02629",
     "size": 4624023552,
     "genre": "Turn-Based Tactics",
@@ -561,7 +521,6 @@
   },
   {
     "name": "Disgaea 7: Vows of the Virtueless",
-    "alt_name": "Disgaea 7: Vows of the Virtueless",
     "id": "CUSA40840",
     "size": 9715646464,
     "genre": "Turn-Based Tactics",
@@ -575,7 +534,6 @@
   },
   {
     "name": "Dishonored 2",
-    "alt_name": "Dishonored 2",
     "id": "CUSA03642",
     "size": 53698560000,
     "genre": "Action Adventure",
@@ -588,8 +546,7 @@
     "comment": null
   },
   {
-    "name": "Dishonored® Definitive Edition",
-    "alt_name": "Dishonored Definitive Edition",
+    "name": "Dishonored Definitive Edition",
     "id": "CUSA02218",
     "size": 19838861312,
     "genre": "Action Adventure",
@@ -603,7 +560,6 @@
   },
   {
     "name": "Divinity : Original Sin Enhanced Edition",
-    "alt_name": "Divinity : Original Sin Enhanced Edition",
     "id": "CUSA02762",
     "size": 8469348352,
     "genre": "Western RPG",
@@ -616,8 +572,7 @@
     "comment": null
   },
   {
-    "name": "Dragon Age™: Inquisition",
-    "alt_name": "Dragon Age: Inquisition",
+    "name": "Dragon Age: Inquisition",
     "id": "CUSA00220",
     "size": 50881036288,
     "genre": "Western RPG",
@@ -631,7 +586,6 @@
   },
   {
     "name": "DRAGON QUEST BUILDERS",
-    "alt_name": "DRAGON QUEST BUILDERS",
     "id": "CUSA05170",
     "size": 907280384,
     "genre": "Sandbox",
@@ -644,8 +598,7 @@
     "comment": null
   },
   {
-    "name": "DRAGON QUEST XI S: Echoes of an Elusive Age – Definitive Edition",
-    "alt_name": "DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition",
+    "name": "DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition",
     "id": "CUSA18600",
     "size": 30551900160,
     "genre": "JRPG",
@@ -659,7 +612,6 @@
   },
   {
     "name": "Dragon's Dogma 2: Dark Arisen",
-    "alt_name": "Dragon's Dogma 2: Dark Arisen",
     "id": "CUSA07340",
     "size": 17156407296,
     "genre": "Action RPG",
@@ -673,7 +625,6 @@
   },
   {
     "name": "ENDER MAGNOLIA: Bloom in the Mist",
-    "alt_name": "ENDER MAGNOLIA: Bloom in the Mist",
     "id": "CUSA48223",
     "size": 5702680576,
     "genre": "Metroidvania",
@@ -687,7 +638,6 @@
   },
   {
     "name": "Enter the Gungeon",
-    "alt_name": "Enter the Gungeon",
     "id": "CUSA01608",
     "size": 394657792,
     "genre": "Top-Down Shoot-'Em-Up",
@@ -701,7 +651,6 @@
   },
   {
     "name": "Exit the Gungeon",
-    "alt_name": "Exit the Gungeon",
     "id": "CUSA19037",
     "size": 841678848,
     "genre": "Top-Down Shoot-'Em-Up",
@@ -715,7 +664,6 @@
   },
   {
     "name": "Fallout 4",
-    "alt_name": "Fallout 4",
     "id": "CUSA03448",
     "size": 58325663744,
     "genre": "Western RPG",
@@ -728,8 +676,7 @@
     "comment": null
   },
   {
-    "name": "Far Cry® 4",
-    "alt_name": "Far Cry 4",
+    "name": "Far Cry 4",
     "id": "CUSA00462",
     "size": 30038556672,
     "genre": "FPS",
@@ -742,8 +689,7 @@
     "comment": null
   },
   {
-    "name": "Far Cry® 5",
-    "alt_name": "Far Cry 5",
+    "name": "Far Cry 5",
     "id": "CUSA05904",
     "size": 50461736960,
     "genre": "FPS",
@@ -756,8 +702,7 @@
     "comment": null
   },
   {
-    "name": "Far Cry® 6",
-    "alt_name": "Far Cry 6",
+    "name": "Far Cry 6",
     "id": "CUSA15717",
     "size": 103552974848,
     "genre": "FPS",
@@ -770,8 +715,7 @@
     "comment": null
   },
   {
-    "name": "Far Cry® Primal",
-    "alt_name": "Far Cry Primal",
+    "name": "Far Cry Primal",
     "id": "CUSA03309",
     "size": 12172984320,
     "genre": "FPS",
@@ -785,7 +729,6 @@
   },
   {
     "name": "FEZ",
-    "alt_name": "FEZ",
     "id": "CUSA00382",
     "size": 237633536,
     "genre": "2D Platformer",
@@ -799,7 +742,6 @@
   },
   {
     "name": "FINAL FANTASY",
-    "alt_name": "FINAL FANTASY",
     "id": "CUSA33818",
     "size": 834404352,
     "genre": "JRPG",
@@ -813,7 +755,6 @@
   },
   {
     "name": "FINAL FANTASY Ⅻ THE ZODIAC AGE",
-    "alt_name": "FINAL FANTASY Ⅻ THE ZODIAC AGE",
     "id": "CUSA05532",
     "size": 40739799040,
     "genre": "JRPG",
@@ -827,7 +768,6 @@
   },
   {
     "name": "FINAL FANTASY IX",
-    "alt_name": "FINAL FANTASY IX",
     "id": "CUSA08918",
     "size": 5301075968,
     "genre": "JRPG",
@@ -841,7 +781,6 @@
   },
   {
     "name": "Final Fantasy Tactics",
-    "alt_name": "Final Fantasy Tactics",
     "id": "SCUS94221",
     "size": 715980800,
     "genre": "Turn-Based Tactics",
@@ -855,7 +794,6 @@
   },
   {
     "name": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
-    "alt_name": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
     "id": "CUSA48840",
     "size": 11527979008,
     "genre": "Turn-Based Tactics",
@@ -869,7 +807,6 @@
   },
   {
     "name": "FINAL FANTASY V",
-    "alt_name": "FINAL FANTASY V",
     "id": "CUSA33834",
     "size": 1420296192,
     "genre": "JRPG",
@@ -883,7 +820,6 @@
   },
   {
     "name": "FINAL FANTASY VI",
-    "alt_name": "FINAL FANTASY VI",
     "id": "CUSA33838",
     "size": 1957167104,
     "genre": "JRPG",
@@ -897,7 +833,6 @@
   },
   {
     "name": "FINAL FANTASY VII REMAKE",
-    "alt_name": "FINAL FANTASY VII REMAKE",
     "id": "CUSA07211",
     "size": 90340982784,
     "genre": "Action RPG",
@@ -911,7 +846,6 @@
   },
   {
     "name": "FINAL FANTASY XV",
-    "alt_name": "FINAL FANTASY XV",
     "id": "CUSA01615",
     "size": 93473341440,
     "genre": "Action RPG",
@@ -925,7 +859,6 @@
   },
   {
     "name": "Firewatch",
-    "alt_name": "Firewatch",
     "id": "CUSA04107",
     "size": 1966080000,
     "genre": "First-Person Adventure",
@@ -939,7 +872,6 @@
   },
   {
     "name": "Flower",
-    "alt_name": "Flower",
     "id": "CUSA00092",
     "size": 595656704,
     "genre": "Retro-Soul",
@@ -953,7 +885,6 @@
   },
   {
     "name": "Frostpunk",
-    "alt_name": "Frostpunk",
     "id": "CUSA15716",
     "size": 3593469952,
     "genre": "Management",
@@ -967,7 +898,6 @@
   },
   {
     "name": "God of War",
-    "alt_name": "God of War",
     "id": "CUSA07408",
     "size": 46692761600,
     "genre": "Linear Action Adventure",
@@ -981,7 +911,6 @@
   },
   {
     "name": "God of War Ragnarök",
-    "alt_name": "God of War Ragnarök",
     "id": "CUSA34384",
     "size": 114346033152,
     "genre": "Action Adventure",
@@ -994,8 +923,7 @@
     "comment": null
   },
   {
-    "name": "Gran Turismo® 7",
-    "alt_name": "Gran Turismo 7",
+    "name": "Gran Turismo 7",
     "id": "CUSA24769",
     "size": 130401370112,
     "genre": "Auto Racing Sim",
@@ -1009,7 +937,6 @@
   },
   {
     "name": "Grand Theft Auto V",
-    "alt_name": "Grand Theft Auto V",
     "id": "CUSA00419",
     "size": 97507672064,
     "genre": "Open-World Action",
@@ -1022,8 +949,7 @@
     "comment": null
   },
   {
-    "name": "GRAVITY RUSH™ 2",
-    "alt_name": "GRAVITY RUSH 2",
+    "name": "GRAVITY RUSH 2",
     "id": "CUSA03694",
     "size": 18721538048,
     "genre": "Open-World Action",
@@ -1037,7 +963,6 @@
   },
   {
     "name": "Grow Home",
-    "alt_name": "Grow Home",
     "id": "CUSA02900",
     "size": 632094720,
     "genre": "Open-World Action",
@@ -1051,7 +976,6 @@
   },
   {
     "name": "Guacamelee! 2",
-    "alt_name": "Guacamelee! 2",
     "id": "CUSA07098",
     "size": 2543714304,
     "genre": "Metroidvania",
@@ -1065,7 +989,6 @@
   },
   {
     "name": "Guacamelee! Super Turbo Championship Edition",
-    "alt_name": "Guacamelee! Super Turbo Championship Edition",
     "id": "CUSA00151",
     "size": 930938880,
     "genre": "Metroidvania",
@@ -1079,7 +1002,6 @@
   },
   {
     "name": "Hades",
-    "alt_name": "Hades",
     "id": "CUSA27387",
     "size": 8151498752,
     "genre": "Action RPG",
@@ -1093,7 +1015,6 @@
   },
   {
     "name": "Harvest Moon: The Winds of Anthos",
-    "alt_name": "Harvest Moon: The Winds of Anthos",
     "id": "CUSA42678",
     "size": 5154209792,
     "genre": "Tycoon",
@@ -1106,8 +1027,7 @@
     "comment": null
   },
   {
-    "name": "Hellblade: Senua’s Sacrifice",
-    "alt_name": "Hellblade: Senua's Sacrifice",
+    "name": "Hellblade: Senua's Sacrifice",
     "id": "CUSA07511",
     "size": 22935306240,
     "genre": "Action Adventure",
@@ -1121,7 +1041,6 @@
   },
   {
     "name": "Hitman 3",
-    "alt_name": "Hitman 3",
     "id": "CUSA18201",
     "size": 73190342656,
     "genre": "Action Adventure",
@@ -1135,7 +1054,6 @@
   },
   {
     "name": "Hitman GO",
-    "alt_name": "Hitman GO",
     "id": "CUSA04126",
     "size": 656474112,
     "genre": "Turn-Based Strategy",
@@ -1149,7 +1067,6 @@
   },
   {
     "name": "Hogwarts Legacy",
-    "alt_name": "Hogwarts Legacy",
     "id": "CUSA12771",
     "size": 70487310336,
     "genre": "Western RPG",
@@ -1163,7 +1080,6 @@
   },
   {
     "name": "Horizon Zero Dawn: Complete Edition",
-    "alt_name": "Horizon Zero Dawn: Complete Edition",
     "id": "CUSA10237",
     "size": 48158539776,
     "genre": "Open-World Action",
@@ -1177,7 +1093,6 @@
   },
   {
     "name": "Hunting Simulator 2",
-    "alt_name": "Hunting Simulator 2",
     "id": "CUSA18646",
     "size": 25363611648,
     "genre": "Hunting",
@@ -1190,8 +1105,7 @@
     "comment": null
   },
   {
-    "name": "Immortals Fenyx Rising ™",
-    "alt_name": "Immortals Fenyx Rising ",
+    "name": "Immortals Fenyx Rising ",
     "id": "CUSA16403",
     "size": 46480228352,
     "genre": "Open-World Action",
@@ -1205,7 +1119,6 @@
   },
   {
     "name": "Inscryption",
-    "alt_name": "Inscryption",
     "id": "CUSA32884",
     "size": 4661641216,
     "genre": "Card Battle",
@@ -1219,7 +1132,6 @@
   },
   {
     "name": "INSIDE",
-    "alt_name": "INSIDE",
     "id": "CUSA02754",
     "size": 1181286400,
     "genre": "2D Platformer",
@@ -1233,7 +1145,6 @@
   },
   {
     "name": "It Takes Two",
-    "alt_name": "It Takes Two",
     "id": "CUSA16742",
     "size": 36869832704,
     "genre": "Linear Action Adventure",
@@ -1247,7 +1158,6 @@
   },
   {
     "name": "Kena: Bridge of Spirits",
-    "alt_name": "Kena: Bridge of Spirits",
     "id": "CUSA24853",
     "size": 9782951936,
     "genre": "Action Adventure",
@@ -1261,7 +1171,6 @@
   },
   {
     "name": "Kentucky Route Zero: TV Edition",
-    "alt_name": "Kentucky Route Zero: TV Edition",
     "id": "CUSA10065",
     "size": 1245380608,
     "genre": "Adventure",
@@ -1275,7 +1184,6 @@
   },
   {
     "name": "KINGDOM HEARTS Ⅲ",
-    "alt_name": "KINGDOM HEARTS Ⅲ",
     "id": "CUSA12031",
     "size": 50297044992,
     "genre": "Action RPG",
@@ -1289,7 +1197,6 @@
   },
   {
     "name": "Lara Croft GO",
-    "alt_name": "Lara Croft GO",
     "id": "CUSA06460",
     "size": 977993728,
     "genre": "Turn-Based Strategy",
@@ -1302,8 +1209,7 @@
     "comment": null
   },
   {
-    "name": "LEGO® MARVEL Super Heroes",
-    "alt_name": "LEGO MARVEL Super Heroes",
+    "name": "LEGO MARVEL Super Heroes",
     "id": "CUSA00083",
     "size": 6272122880,
     "genre": "Open-World Action",
@@ -1316,8 +1222,7 @@
     "comment": null
   },
   {
-    "name": "LEGO® Star Wars™: The Skywalker Saga",
-    "alt_name": "LEGO Star Wars: The Skywalker Saga",
+    "name": "LEGO Star Wars: The Skywalker Saga",
     "id": "CUSA13794",
     "size": 35928604672,
     "genre": "Action Adventure",
@@ -1331,7 +1236,6 @@
   },
   {
     "name": "Life is Strange 2",
-    "alt_name": "Life is Strange 2",
     "id": "CUSA08283",
     "size": 24740823040,
     "genre": "Third-Person Adventure",
@@ -1345,7 +1249,6 @@
   },
   {
     "name": "Life is Strange Remastered",
-    "alt_name": "Life is Strange Remastered",
     "id": "CUSA23978",
     "size": 38413533184,
     "genre": "Third-Person Adventure",
@@ -1358,8 +1261,7 @@
     "comment": null
   },
   {
-    "name": "Life is Strange: True Colors™",
-    "alt_name": "Life is Strange: True Colors",
+    "name": "Life is Strange: True Colors",
     "id": "CUSA24801",
     "size": 25483804672,
     "genre": "Third-Person Adventure",
@@ -1372,8 +1274,7 @@
     "comment": null
   },
   {
-    "name": "LittleBigPlanet™3",
-    "alt_name": "LittleBigPlanet3",
+    "name": "LittleBigPlanet3",
     "id": "CUSA00473",
     "size": 14029815808,
     "genre": "2D Platformer",
@@ -1387,7 +1288,6 @@
   },
   {
     "name": "Mad Max",
-    "alt_name": "Mad Max",
     "id": "CUSA02703",
     "size": 33445969920,
     "genre": "Open-World Action",
@@ -1401,7 +1301,6 @@
   },
   {
     "name": "Maneater",
-    "alt_name": "Maneater",
     "id": "CUSA14519",
     "size": 17417502720,
     "genre": "Open-World Action",
@@ -1415,7 +1314,6 @@
   },
   {
     "name": "Marvel's Guardians of the Galaxy",
-    "alt_name": "Marvel's Guardians of the Galaxy",
     "id": "CUSA24103",
     "size": 67799678976,
     "genre": "Linear Action Adventure",
@@ -1429,7 +1327,6 @@
   },
   {
     "name": "Marvel's Spider-Man",
-    "alt_name": "Marvel's Spider-Man",
     "id": "CUSA02299",
     "size": 60286763008,
     "genre": "Open-World Action",
@@ -1442,8 +1339,7 @@
     "comment": null
   },
   {
-    "name": "Mass Effect™: Andromeda § RpO®",
-    "alt_name": "Mass Effect: Andromeda",
+    "name": "Mass Effect: Andromeda",
     "id": "CUSA02684",
     "size": 45309952000,
     "genre": "Action RPG",
@@ -1457,7 +1353,6 @@
   },
   {
     "name": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
-    "alt_name": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
     "id": "CUSA05597",
     "size": 32679133184,
     "genre": "Open-World Action",
@@ -1471,7 +1366,6 @@
   },
   {
     "name": "Monster Hunter: World",
-    "alt_name": "Monster Hunter: World",
     "id": "CUSA07708",
     "size": 14293860352,
     "genre": "Action RPG",
@@ -1485,7 +1379,6 @@
   },
   {
     "name": "Moonlighter",
-    "alt_name": "Moonlighter",
     "id": "CUSA10138",
     "size": 1137442816,
     "genre": "Action RPG",
@@ -1499,7 +1392,6 @@
   },
   {
     "name": "Neon White",
-    "alt_name": "Neon White",
     "id": "CUSA36342",
     "size": 5259460608,
     "genre": "FPS",
@@ -1513,7 +1405,6 @@
   },
   {
     "name": "Neverwinter Nights: Enhanced Edition",
-    "alt_name": "Neverwinter Nights: Enhanced Edition",
     "id": "CUSA15938",
     "size": 6801391616,
     "genre": "Western RPG",
@@ -1526,8 +1417,7 @@
     "comment": null
   },
   {
-    "name": "Ni no Kuni™ II: Revenant Kingdom",
-    "alt_name": "Ni no Kuni II: Revenant Kingdom",
+    "name": "Ni no Kuni II: Revenant Kingdom",
     "id": "CUSA09243",
     "size": 25735725056,
     "genre": "JRPG",
@@ -1541,7 +1431,6 @@
   },
   {
     "name": "NieR:Automata",
-    "alt_name": "NieR:Automata",
     "id": "CUSA04480",
     "size": 36877238272,
     "genre": "Action RPG",
@@ -1555,7 +1444,6 @@
   },
   {
     "name": "Night in the Woods",
-    "alt_name": "Night in the Woods",
     "id": "CUSA05996",
     "size": 3232366592,
     "genre": "Adventure",
@@ -1569,7 +1457,6 @@
   },
   {
     "name": "No Man's Sky",
-    "alt_name": "No Man's Sky",
     "id": "CUSA04841",
     "size": 25622609920,
     "genre": "Open-World Action",
@@ -1583,7 +1470,6 @@
   },
   {
     "name": "Oceanhorn",
-    "alt_name": "Oceanhorn",
     "id": "CUSA05010",
     "size": 429785088,
     "genre": "Open-World Action",
@@ -1597,7 +1483,6 @@
   },
   {
     "name": "OCTOPATH TRAVELER II",
-    "alt_name": "OCTOPATH TRAVELER II",
     "id": "CUSA36274",
     "size": 10809638912,
     "genre": "JRPG",
@@ -1611,7 +1496,6 @@
   },
   {
     "name": "Outer Wilds",
-    "alt_name": "Outer Wilds",
     "id": "CUSA09929",
     "size": 3991732224,
     "genre": "Open-World Action",
@@ -1625,7 +1509,6 @@
   },
   {
     "name": "Owlboy",
-    "alt_name": "Owlboy",
     "id": "CUSA09920",
     "size": 433651712,
     "genre": "Action Adventure",
@@ -1639,7 +1522,6 @@
   },
   {
     "name": "Persona 3 Reload",
-    "alt_name": "Persona 3 Reload",
     "id": "CUSA37521",
     "size": 53464465408,
     "genre": "JRPG",
@@ -1653,7 +1535,6 @@
   },
   {
     "name": "Persona 4 GOLDEN",
-    "alt_name": "Persona 4 GOLDEN",
     "id": "CUSA33874",
     "size": 19672793088,
     "genre": "JRPG",
@@ -1667,7 +1548,6 @@
   },
   {
     "name": "Persona 5 Royal",
-    "alt_name": "Persona 5 Royal",
     "id": "CUSA17416",
     "size": 38645465088,
     "genre": "JRPG",
@@ -1681,7 +1561,6 @@
   },
   {
     "name": "Planet of Lana",
-    "alt_name": "Planet of Lana",
     "id": "CUSA45894",
     "size": 3651731456,
     "genre": "Action Adventure",
@@ -1695,7 +1574,6 @@
   },
   {
     "name": "Psychonauts 2",
-    "alt_name": "Psychonauts 2",
     "id": "CUSA27145",
     "size": 33655947264,
     "genre": "3D Platformer",
@@ -1708,8 +1586,7 @@
     "comment": null
   },
   {
-    "name": "Ratchet & Clank™",
-    "alt_name": "Ratchet & Clank",
+    "name": "Ratchet & Clank",
     "id": "CUSA01047",
     "size": 25547833344,
     "genre": "3D Platformer",
@@ -1722,8 +1599,7 @@
     "comment": null
   },
   {
-    "name": "Rayman® Legends",
-    "alt_name": "Rayman Legends",
+    "name": "Rayman Legends",
     "id": "CUSA00069",
     "size": 7775125504,
     "genre": "2D Platformer",
@@ -1737,7 +1613,6 @@
   },
   {
     "name": "Red Dead Redemption",
-    "alt_name": "Red Dead Redemption",
     "id": "CUSA36843",
     "size": 10241703936,
     "genre": "Open-World Action",
@@ -1751,7 +1626,6 @@
   },
   {
     "name": "Red Dead Redemption 2",
-    "alt_name": "Red Dead Redemption 2",
     "id": "CUSA03041",
     "size": 105918365696,
     "genre": "Open-World Action",
@@ -1765,7 +1639,6 @@
   },
   {
     "name": "Rez Infinite",
-    "alt_name": "Rez Infinite",
     "id": "CUSA05868",
     "size": 1106378752,
     "genre": "Rail Shooter",
@@ -1779,7 +1652,6 @@
   },
   {
     "name": "Rise of the Tomb Raider: 20 Year Celebration",
-    "alt_name": "Rise of the Tomb Raider: 20 Year Celebration",
     "id": "CUSA05794",
     "size": 15396438016,
     "genre": "Linear Action Adventure",
@@ -1792,8 +1664,7 @@
     "comment": null
   },
   {
-    "name": "Rogue Galaxy™",
-    "alt_name": "Rogue Galaxy",
+    "name": "Rogue Galaxy",
     "id": "CUSA02195",
     "size": 5552144384,
     "genre": "Action RPG",
@@ -1807,7 +1678,6 @@
   },
   {
     "name": "Rogue Legacy 2",
-    "alt_name": "Rogue Legacy 2",
     "id": "CUSA42371",
     "size": 895877120,
     "genre": "Roguelike",
@@ -1821,7 +1691,6 @@
   },
   {
     "name": "SaGa Frontier Remastered",
-    "alt_name": "SaGa Frontier Remastered",
     "id": "CUSA26054",
     "size": 3866492928,
     "genre": "JRPG",
@@ -1835,7 +1704,6 @@
   },
   {
     "name": "Salt and Sanctuary",
-    "alt_name": "Salt and Sanctuary",
     "id": "CUSA02353",
     "size": 963313664,
     "genre": "Metroidvania",
@@ -1849,7 +1717,6 @@
   },
   {
     "name": "Sea of Stars",
-    "alt_name": "Sea of Stars",
     "id": "CUSA31579",
     "size": 4759879680,
     "genre": "JRPG",
@@ -1862,8 +1729,7 @@
     "comment": null
   },
   {
-    "name": "SHADOW OF THE COLOSSUS™",
-    "alt_name": "SHADOW OF THE COLOSSUS",
+    "name": "SHADOW OF THE COLOSSUS",
     "id": "CUSA08809",
     "size": 13584105472,
     "genre": "Action Adventure",
@@ -1877,7 +1743,6 @@
   },
   {
     "name": "Shadow of the Tomb Raider",
-    "alt_name": "Shadow of the Tomb Raider",
     "id": "CUSA10872",
     "size": 32822132736,
     "genre": "Action Adventure",
@@ -1891,7 +1756,6 @@
   },
   {
     "name": "Shenmue",
-    "alt_name": "Shenmue",
     "id": "CUSA12279",
     "size": 3033137152,
     "genre": "Open-World Action",
@@ -1905,7 +1769,6 @@
   },
   {
     "name": "Shenmue II",
-    "alt_name": "Shenmue II",
     "id": "CUSA12280",
     "size": 8075345920,
     "genre": "Open-World Action",
@@ -1919,7 +1782,6 @@
   },
   {
     "name": "Shenmue III",
-    "alt_name": "Shenmue III",
     "id": "CUSA12289",
     "size": 40525365248,
     "genre": "Open-World Action",
@@ -1933,7 +1795,6 @@
   },
   {
     "name": "Sherlock Holmes: The Devil's Daughter",
-    "alt_name": "Sherlock Holmes: The Devil's Daughter",
     "id": "CUSA26738",
     "size": 15364194304,
     "genre": "Third-Person Adventure",
@@ -1947,7 +1808,6 @@
   },
   {
     "name": "Shovel Knight",
-    "alt_name": "Shovel Knight",
     "id": "CUSA01867",
     "size": 475004928,
     "genre": "2D Platformer",
@@ -1961,7 +1821,6 @@
   },
   {
     "name": "Silence",
-    "alt_name": "Silence",
     "id": "CUSA03174",
     "size": 7311523840,
     "genre": "Adventure",
@@ -1975,7 +1834,6 @@
   },
   {
     "name": "Sleeping Dogs: Definitive Edition",
-    "alt_name": "Sleeping Dogs: Definitive Edition",
     "id": "CUSA01111",
     "size": 17534156800,
     "genre": "Open-World Action",
@@ -1989,7 +1847,6 @@
   },
   {
     "name": "Sniper Elite 3 Ultimate Edition",
-    "alt_name": "Sniper Elite 3 Ultimate Edition",
     "id": "CUSA01829",
     "size": 23481942016,
     "genre": "Tactical Third Person Shooter",
@@ -2003,7 +1860,6 @@
   },
   {
     "name": "Sniper Elite 5",
-    "alt_name": "Sniper Elite 5",
     "id": "CUSA16164",
     "size": 56672649216,
     "genre": "Tactical Third Person Shooter",
@@ -2016,8 +1872,20 @@
     "comment": null
   },
   {
-    "name": "South Park™: The Fractured But Whole™",
-    "alt_name": "South Park: The Fractured But Whole",
+    "name": "SnowRunner",
+    "id": "CUSA17425",
+    "size": 35996172288,
+    "genre": "Vehicle Sim",
+    "backup": "DS919",
+    "owner": null,
+    "played": null,
+    "latest_update": "01.64",
+    "tested": "OK",
+    "dlcs": null,
+    "comment": null
+  },
+  {
+    "name": "South Park: The Fractured But Whole",
     "id": "CUSA04311",
     "size": 22854565888,
     "genre": "RPG",
@@ -2031,7 +1899,6 @@
   },
   {
     "name": "Spelunky 2",
-    "alt_name": "Spelunky 2",
     "id": "CUSA20601",
     "size": 712769536,
     "genre": "2D Platformer",
@@ -2045,7 +1912,6 @@
   },
   {
     "name": "Spyro Reignited Trilogy",
-    "alt_name": "Spyro Reignited Trilogy",
     "id": "CUSA12085",
     "size": 36353015808,
     "genre": "3D Platformer",
@@ -2059,7 +1925,6 @@
   },
   {
     "name": "Stardew Valley",
-    "alt_name": "Stardew Valley",
     "id": "CUSA06840",
     "size": 528744448,
     "genre": "Virtual Life",
@@ -2073,7 +1938,6 @@
   },
   {
     "name": "SteamWorld Collection",
-    "alt_name": "SteamWorld Collection",
     "id": "CUSA06077",
     "size": 346161152,
     "genre": "Metroidvania, Turn-Based Strategy",
@@ -2087,7 +1951,6 @@
   },
   {
     "name": "STORY OF SEASONS: Pioneers of Olive Town",
-    "alt_name": "STORY OF SEASONS: Pioneers of Olive Town",
     "id": "CUSA31951",
     "size": 1398800384,
     "genre": "Tycoon",
@@ -2101,7 +1964,6 @@
   },
   {
     "name": "Stray",
-    "alt_name": "Stray",
     "id": "CUSA24899",
     "size": 13602455552,
     "genre": "Action Adventure",
@@ -2115,7 +1977,6 @@
   },
   {
     "name": "Subnautica",
-    "alt_name": "Subnautica",
     "id": "CUSA13529",
     "size": 2942173184,
     "genre": "Sandbox",
@@ -2129,7 +1990,6 @@
   },
   {
     "name": "Subnautica Below Zero",
-    "alt_name": "Subnautica Below Zero",
     "id": "CUSA18065",
     "size": 3175088128,
     "genre": "Sandbox",
@@ -2143,7 +2003,6 @@
   },
   {
     "name": "Tactics Ogre: Reborn",
-    "alt_name": "Tactics Ogre: Reborn",
     "id": "CUSA25754",
     "size": 9141026816,
     "genre": "Turn-Based Tactics",
@@ -2156,8 +2015,7 @@
     "comment": null
   },
   {
-    "name": "Tearaway™ Unfolded",
-    "alt_name": "Tearaway Unfolded",
+    "name": "Tearaway Unfolded",
     "id": "CUSA00562",
     "size": 7079460864,
     "genre": "3D Platformer",
@@ -2171,7 +2029,6 @@
   },
   {
     "name": "The Last Campfire",
-    "alt_name": "The Last Campfire",
     "id": "CUSA19445",
     "size": 1419182080,
     "genre": "Action Puzzle",
@@ -2185,7 +2042,6 @@
   },
   {
     "name": "The Legend of Heroes: Trails through Daybreak",
-    "alt_name": "The Legend of Heroes: Trails through Daybreak",
     "id": "CUSA45506",
     "size": 12737576960,
     "genre": "JRPG",
@@ -2199,7 +2055,6 @@
   },
   {
     "name": "The Legend of Heroes: Trails to Azure",
-    "alt_name": "The Legend of Heroes: Trails to Azure",
     "id": "CUSA29190",
     "size": 8641576960,
     "genre": "JRPG",
@@ -2213,7 +2068,6 @@
   },
   {
     "name": "The Outer Worlds",
-    "alt_name": "The Outer Worlds",
     "id": "CUSA13689",
     "size": 48443228160,
     "genre": "Western RPG",
@@ -2227,7 +2081,6 @@
   },
   {
     "name": "The Sexy Brutale",
-    "alt_name": "The Sexy Brutale",
     "id": "CUSA06819",
     "size": 1150615552,
     "genre": "Puzzle Adventure",
@@ -2241,7 +2094,6 @@
   },
   {
     "name": "The Stanley Parable: Ultra Deluxe",
-    "alt_name": "The Stanley Parable: Ultra Deluxe",
     "id": "CUSA31559",
     "size": 4959436800,
     "genre": "First-Person Adventure",
@@ -2255,7 +2107,6 @@
   },
   {
     "name": "The Swapper",
-    "alt_name": "The Swapper",
     "id": "CUSA00315",
     "size": 286785536,
     "genre": "Metroidvania",
@@ -2269,7 +2120,6 @@
   },
   {
     "name": "The Talos Principle",
-    "alt_name": "The Talos Principle",
     "id": "CUSA01256",
     "size": 4788846592,
     "genre": "First-Person Adventure",
@@ -2283,7 +2133,6 @@
   },
   {
     "name": "The Vanishing of Ethan Carter",
-    "alt_name": "The Vanishing of Ethan Carter",
     "id": "CUSA03048",
     "size": 3006529536,
     "genre": "First-Person Adventure",
@@ -2296,8 +2145,7 @@
     "comment": null
   },
   {
-    "name": "The Witcher 3: Wild Hunt – Complete Edition",
-    "alt_name": "The Witcher 3: Wild Hunt - Complete Edition",
+    "name": "The Witcher 3: Wild Hunt - Complete Edition",
     "id": "CUSA05725",
     "size": 44530925568,
     "genre": "Action RPG",
@@ -2311,7 +2159,6 @@
   },
   {
     "name": "The Witness",
-    "alt_name": "The Witness",
     "id": "CUSA04263",
     "size": 4772921344,
     "genre": "First-Person Adventure",
@@ -2325,7 +2172,6 @@
   },
   {
     "name": "Thimbleweed Park",
-    "alt_name": "Thimbleweed Park",
     "id": "CUSA08960",
     "size": 1933836288,
     "genre": "Point-and-Click",
@@ -2339,7 +2185,6 @@
   },
   {
     "name": "Thomas Was Alone",
-    "alt_name": "Thomas Was Alone",
     "id": "CUSA00909",
     "size": 316145664,
     "genre": "2D Platformer",
@@ -2352,8 +2197,7 @@
     "comment": null
   },
   {
-    "name": "Titanfall™ 2",
-    "alt_name": "Titanfall 2",
+    "name": "Titanfall 2",
     "id": "CUSA04027",
     "size": 55198482432,
     "genre": "FPS",
@@ -2367,7 +2211,6 @@
   },
   {
     "name": "Tomb Raider: Definitive Edition",
-    "alt_name": "Tomb Raider: Definitive Edition",
     "id": "CUSA00107",
     "size": 15473639424,
     "genre": "Action Adventure",
@@ -2381,7 +2224,6 @@
   },
   {
     "name": "Transistor",
-    "alt_name": "Transistor",
     "id": "CUSA00642",
     "size": 2397110272,
     "genre": "Action RPG",
@@ -2395,7 +2237,6 @@
   },
   {
     "name": "Trials of Mana",
-    "alt_name": "Trials of Mana",
     "id": "CUSA17050",
     "size": 15676407808,
     "genre": "Action RPG",
@@ -2409,7 +2250,6 @@
   },
   {
     "name": "Trine 2",
-    "alt_name": "Trine 2",
     "id": "CUSA00234",
     "size": 2551250944,
     "genre": "2D Platformer",
@@ -2423,7 +2263,6 @@
   },
   {
     "name": "Trine 4: The Nightmare Prince",
-    "alt_name": "Trine 4: The Nightmare Prince",
     "id": "CUSA09869",
     "size": 6172377088,
     "genre": "2D Platformer",
@@ -2437,7 +2276,6 @@
   },
   {
     "name": "Tunic",
-    "alt_name": "Tunic",
     "id": "CUSA26968",
     "size": 2045050880,
     "genre": "Open-World Action",
@@ -2450,8 +2288,7 @@
     "comment": null
   },
   {
-    "name": "Uncharted 4: A Thief’s End™",
-    "alt_name": "Uncharted 4: A Thief's End",
+    "name": "Uncharted 4: A Thief's End",
     "id": "CUSA00341",
     "size": 58123091968,
     "genre": "Linear Action Adventure",
@@ -2464,8 +2301,7 @@
     "comment": null
   },
   {
-    "name": "Uncharted: The Lost Legacy™",
-    "alt_name": "Uncharted: The Lost Legacy",
+    "name": "Uncharted: The Lost Legacy",
     "id": "CUSA07737",
     "size": 46836219904,
     "genre": "Linear Action Adventure",
@@ -2479,7 +2315,6 @@
   },
   {
     "name": "Undertale",
-    "alt_name": "Undertale",
     "id": "CUSA08801",
     "size": 347078656,
     "genre": "JRPG",
@@ -2493,7 +2328,6 @@
   },
   {
     "name": "Unpacking",
-    "alt_name": "Unpacking",
     "id": "CUSA32706",
     "size": 810811392,
     "genre": "Puzzle",
@@ -2507,7 +2341,6 @@
   },
   {
     "name": "Unravel",
-    "alt_name": "Unravel",
     "id": "CUSA02532",
     "size": 2858156032,
     "genre": "2D Platformer",
@@ -2521,7 +2354,6 @@
   },
   {
     "name": "Unravel TWO",
-    "alt_name": "Unravel TWO",
     "id": "CUSA10416",
     "size": 3445686272,
     "genre": "2D Platformer",
@@ -2535,7 +2367,6 @@
   },
   {
     "name": "Valiant Hearts: The Great War",
-    "alt_name": "Valiant Hearts: The Great War",
     "id": "CUSA00479",
     "size": 1256718336,
     "genre": "2D Platformer",
@@ -2549,7 +2380,6 @@
   },
   {
     "name": "Wasteland 2: Director's Cut",
-    "alt_name": "Wasteland 2: Director's Cut",
     "id": "CUSA03144",
     "size": 4792713216,
     "genre": "Western RPG",
@@ -2563,7 +2393,6 @@
   },
   {
     "name": "Wasteland 3",
-    "alt_name": "Wasteland 3",
     "id": "CUSA13339",
     "size": 17499684864,
     "genre": "Western RPG",
@@ -2576,8 +2405,7 @@
     "comment": null
   },
   {
-    "name": "WATCH_DOGS® 2",
-    "alt_name": "WATCH_DOGS 2",
+    "name": "WATCH_DOGS 2",
     "id": "CUSA04294",
     "size": 39019937792,
     "genre": "Open-World Action",
@@ -2591,7 +2419,6 @@
   },
   {
     "name": "What Remains of Edith Finch",
-    "alt_name": "What Remains of Edith Finch",
     "id": "CUSA06886",
     "size": 2625896448,
     "genre": "First-Person Adventure",
@@ -2605,7 +2432,6 @@
   },
   {
     "name": "WORLD OF FINAL FANTASY",
-    "alt_name": "WORLD OF FINAL FANTASY",
     "id": "CUSA04647",
     "size": 12820676608,
     "genre": "JRPG",
@@ -2619,7 +2445,6 @@
   },
   {
     "name": "XCOM 2",
-    "alt_name": "XCOM 2",
     "id": "CUSA04552",
     "size": 23352508416,
     "genre": "Turn-Based Tactics",
@@ -2633,7 +2458,6 @@
   },
   {
     "name": "Yakuza 6: The Song of Life",
-    "alt_name": "Yakuza 6: The Song of Life",
     "id": "CUSA09660",
     "size": 36534288384,
     "genre": "Open-World Action",
@@ -2647,7 +2471,6 @@
   },
   {
     "name": "Yakuza: Like a Dragon",
-    "alt_name": "Yakuza: Like a Dragon",
     "id": "CUSA16734",
     "size": 45954301952,
     "genre": "JRPG",
@@ -2661,7 +2484,6 @@
   },
   {
     "name": "Zanki Zero: Last Beginning",
-    "alt_name": "Zanki Zero: Last Beginning",
     "id": "CUSA14971",
     "size": 9099018240,
     "genre": "RPG",

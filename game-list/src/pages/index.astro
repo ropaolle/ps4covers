@@ -28,25 +28,11 @@ const images: GalleryImage[] = await Promise.all(
     // Extract clean filename (e.g., "/src/assets/gallery/CUSA00010.jpg" -> "CUSA00010.jpg")
     const filename = path.split("/").pop() ?? "";
     const id = filename.slice(0, -4);
-    const name = games.find((game) => game.id === id)?.alt_name;
+    const name = games.find((game) => game.id === id)?.name;
 
-    // if (optimized.attributes.width < 1024) {
-    //   console.log(`${filename} -> ${optimized.attributes.width}`);
-    // }
-
-    // CUSA00315.jpg -> 800
-    // CUSA00473.jpg -> 800
-    // CUSA07737.jpg -> 800
-    // CUSA11454.jpg -> 800
-    // CUSA16164.jpg -> 800
-    // CUSA24769.jpg -> 800
-    // CUSA31579.jpg -> 800
-    // CUSA34384.jpg -> 800
-    // CUSA42371.jpg -> 800
-    // SCUS94221.jpg -> 788
-    // SLUS21397.jpg -> 800
-
-    // console.log(`Optimized image: ${filename} -> ${id}`);
+    if (optimized.attributes.width < 1024) {
+      console.log(`${filename} -> ${optimized.attributes.width}`);
+    }
 
     return {
       src: optimized.src,
