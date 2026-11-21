@@ -2,13 +2,10 @@
 // import Welcome from "../components/Welcome.astro";
 // import Layout from "../layouts/Layout.astro";
 import { getImage } from "astro:assets";
-import GameView, { type GalleryImage } from "../components/GameView";
+import GameView, { type GameItem, type ImageItem } from "../components/GameView";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
 import games from "../data/games.json";
 import manifest from "../data/manifest.json";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 
 // Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
@@ -17,7 +14,7 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Optimize each image with getImage() at build time
-const images: GalleryImage[] = await Promise.all(
+const images: ImageItem[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({
       src: mod.default,
@@ -75,6 +72,6 @@ console.log(genres);
     <h1 class="text-3xl font-bold tracking-tight mb-8">PS4 Games</h1>
 
     <!-- Hydrate React component on the client -->
-    <GameView client:load images={gameList} />
+    <GameView client:load games={gameList} />
   </main>
 </body>

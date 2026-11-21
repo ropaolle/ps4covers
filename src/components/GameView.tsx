@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 
-// FIXA: Type, borde heta Game och Games
-export interface GalleryImage {
+
+export interface ImageItem {
+  src: string;
+  filename: string;
+  name?: string;
+  id: string;
+}
+
+
+export interface GameItem {
   src: string;
   filename: string;
   name?: string;
@@ -10,7 +18,7 @@ export interface GalleryImage {
 }
 
 interface Props {
-  images: GalleryImage[];
+  games: GameItem[];
 }
 
 function formatBytes(bytes: number, decimals = 2) {
@@ -23,18 +31,18 @@ function formatBytes(bytes: number, decimals = 2) {
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
 }
 
-export default function GameView({ images }: Props) {
+export default function GameView({ games }: Props) {
   const [query, setQuery] = useState("");
 
-  // Filter images case-insensitively based on the filename
-  const filteredImages = images.filter(
+  // Filter games case-insensitively based on the filename
+  const filteredImages = games.filter(
     (img) =>
       // img.name.toLowerCase().includes(query.toLowerCase().trim()),
       img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
       img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
 
-  const getUpdateINfo = (img: GalleryImage) => {};
+  const getUpdateINfo = (img: GameItem) => {};
 
   return (
     <div className="space-y-6">
@@ -48,7 +56,7 @@ export default function GameView({ images }: Props) {
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
         <p className="text-sm text-gray-500">
-          Showing {filteredImages.length} of {images.length} images
+          Showing {filteredImages.length} of {games.length} games
         </p>
       </div>
 
@@ -121,7 +129,7 @@ export default function GameView({ images }: Props) {
         </div>
       ) : (
         <div className="rounded-lg border border-dashed border-gray-300 p-12 text-center">
-          <p className="text-gray-500">No images match "{query}".</p>
+          <p className="text-gray-500">No games match "{query}".</p>
         </div>
       )}
     </div>
