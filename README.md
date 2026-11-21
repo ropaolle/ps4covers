@@ -14,6 +14,15 @@ cd ./magical-meteor
 npm run dev
 ```
 
+## 120 char lines (Added to VScode settings)
+
+```json
+{
+  "prettier.printWidth": 120,
+  "html.format.wrapLineLength": 120
+}
+```
+
 ## Download PS4 covers
 
 Python script som laddar ner omslagsbilder till PS4 spel från PSN. Jag kan använda mina egna behörighetskoder. Scriptet ska hämta alla omslag baserat på en list med TITLE-ID av typen CUSA24767, CUSA16596, CUSA15717, CUSA00419.

@@ -1,6 +1,4 @@
 ---
-// import Welcome from "../components/Welcome.astro";
-// import Layout from "../layouts/Layout.astro";
 import { getImage } from "astro:assets";
 import GameView, { type GameItem, type ImageItem } from "../components/GameView";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
@@ -16,40 +14,19 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 // Optimize each image with getImage() at build time
 const images: ImageItem[] = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
-    const optimized = await getImage({
-      src: mod.default,
-      width: 600,
-      height: 600,
-      format: "webp",
-    });
-
-    // Extract clean filename (e.g., "/src/assets/gallery/CUSA00010.jpg" -> "CUSA00010.jpg")
+    const optimized = await getImage({ src: mod.default, width: 600, height: 600, format: "webp" });
     const filename = path.split("/").pop() ?? "";
     const id = filename.slice(0, -4);
 
-    // if (optimized.attributes.width < 1024) {
-    //   console.warn(`WARNING: Image smaller then 1024px ${filename} -> ${optimized.attributes.width}px`);
-    // }
-
-    return {
-      src: optimized.src,
-      filename,
-      id,
-    };
+    return { src: optimized.src, filename, id };
   }),
 );
-
-const genres = new Set();
 
 // Merge images and games
 const imageMap = new Map(images.map((image) => [image.id, image]));
 const gameList = games.map((game) => {
   const match = imageMap.get(game.id);
-  const pkgInfo = manifest.Entries.find(
-    (entry) => entry.TitleId === game.id && entry.Category === "Game",
-  );
-
-  genres.add(game.genre);
+  const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");
 
   if (!match) {
     console.warn(`WARNING: No matching image found for game ID: ${game.id}`);
@@ -64,7 +41,10 @@ const gameList = games.map((game) => {
 
 console.log("INFO: Found images:", images.length);
 console.log(gameList[0]);
-console.log(genres);
+
+// const genres = new Set(games.map((game) => game.genre));
+// console.log(genres);
+
 ---
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">

@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 
-
 export interface ImageItem {
   src: string;
-  filename: string;
-  name?: string;
+  // filename: string;
+  // name?: string;
   id: string;
 }
 
-
 export interface GameItem {
-  src: string;
-  filename: string;
-  name?: string;
-  id: string;
+  // src: string;
+  // filename: string;
+  // name?: string;
+  // id: string;
+  // size: number;
+
+  name: string;
+  id:  string;
   size: number;
+  genre:  string;
+  backup:  string;
+  // owner: null,
+  // played: null,
+  version:  string;
+  // tested: 'OK',
+  dlcs:  string;
 }
 
 interface Props {
@@ -80,42 +89,27 @@ export default function GameView({ games }: Props) {
                     className="text-right font-medium text-xl text-black"
                     title={`${img.version} (latest ${img.pkgInfo?.LatestUpdate})`}
                   >
-                    {img.pkgInfo?.LatestUpdate !== "No Update" &&
-                    img.pkgInfo?.LatestUpdate > img.version
-                      ? "⚠️"
-                      : ""}
+                    {img.pkgInfo?.LatestUpdate !== "No Update" && img.pkgInfo?.LatestUpdate > img.version ? "⚠️" : ""}
                   </p>
                   {img.dlcs && (
-                    <p
-                      className="text-right font-medium text-xl text-black"
-                      title={`${img.dlcs}`}
-                    >
+                    <p className="text-right font-medium text-xl text-black" title={`${img.dlcs}`}>
                       📦
                     </p>
                   )}
                   {img.backup && (
-                    <p
-                      className="text-right font-medium text-xl text-black"
-                      title={`${img.backup}`}
-                    >
+                    <p className="text-right font-medium text-xl text-black" title={`${img.backup}`}>
                       💾
                     </p>
                   )}
                   {img.owner && (
-                    <p
-                      className="text-right font-medium text-xl text-black"
-                      title="Köpt"
-                    >
+                    <p className="text-right font-medium text-xl text-black" title="Köpt">
                       💳
                     </p>
                   )}
                 </div>
               </div>
               <div className="p-3">
-                <p
-                  className="truncate text-sm font-medium text-gray-700"
-                  title={JSON.stringify(img)}
-                >
+                <p className="truncate text-sm font-medium text-gray-700" title={JSON.stringify(img)}>
                   {img.name} ({formatBytes(img.size)})
                 </p>
               </div>
