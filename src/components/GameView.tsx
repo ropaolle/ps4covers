@@ -1,33 +1,41 @@
 import React, { useState } from "react";
-
-export interface ImageItem {
-  src: string;
-  // filename: string;
-  // name?: string;
-  id: string;
-}
+import usFlag from "../assets/us_flag.svg";
+import euFlag from "../assets/eu_flag.svg";
+import japanFlag from "../assets/japan_flag.svg";
 
 export interface GameItem {
-  // src: string;
-  // filename: string;
-  // name?: string;
-  // id: string;
-  // size: number;
-
+  src: string | undefined;
+  filename: string;
   name: string;
-  id:  string;
+  id: string;
   size: number;
-  genre:  string;
-  backup:  string;
-  // owner: null,
-  // played: null,
-  version:  string;
-  // tested: 'OK',
-  dlcs:  string;
+  genre: string;
+  backup: string;
+  owner: boolean;
+  played: boolean;
+  version: string;
+  working: boolean;
+  dlcs: string | null;
+  latestUpdate: string;
+  region: string;
+  altName: string;
 }
 
 interface Props {
   games: GameItem[];
+}
+
+function getFlagImage(region: string) {
+  switch (region.toLowerCase()) {
+    case "us":
+      return usFlag.src;
+    case "eu":
+      return euFlag.src;
+    case "japan":
+      return japanFlag.src;
+    default:
+      return "";
+  }
 }
 
 function formatBytes(bytes: number, decimals = 2) {
@@ -51,7 +59,9 @@ export default function GameView({ games }: Props) {
       img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
 
-  const getUpdateINfo = (img: GameItem) => {};
+  const sortedImages = filteredImages.sort((a, b) => a.name.localeCompare(b.name));
+  // const sortedImages = filteredImages.sort((a, b) => a.id.localeCompare(b.id));
+  // const sortedImages = filteredImages.sort((a, b) => b.size - a.size);
 
   return (
     <div className="space-y-6">
@@ -72,7 +82,7 @@ export default function GameView({ games }: Props) {
       {/* Responsive Image Grid */}
       {filteredImages.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredImages.map((img) => (
+          {sortedImages.map((img) => (
             <div
               key={img.src}
               className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md"
@@ -82,14 +92,14 @@ export default function GameView({ games }: Props) {
                   src={img.src}
                   alt={img.filename}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${img.working ? "" : "grayscale opacity-25"}`}
                 />
                 <div className="absolute inset-0 flex items-end justify-end p-4">
                   <p
                     className="text-right font-medium text-xl text-black"
-                    title={`${img.version} (latest ${img.pkgInfo?.LatestUpdate})`}
+                    title={`${img.version} (latest ${img.latestUpdate})`}
                   >
-                    {img.pkgInfo?.LatestUpdate !== "No Update" && img.pkgInfo?.LatestUpdate > img.version ? "⚠️" : ""}
+                    {img.latestUpdate !== "No Update" && img.latestUpdate > img.version ? "⚠️" : ""}
                   </p>
                   {img.dlcs && (
                     <p className="text-right font-medium text-xl text-black" title={`${img.dlcs}`}>
@@ -110,13 +120,18 @@ export default function GameView({ games }: Props) {
               </div>
               <div className="p-3">
                 <p className="truncate text-sm font-medium text-gray-700" title={JSON.stringify(img)}>
-                  {img.name} ({formatBytes(img.size)})
+                  {img.altName} ({formatBytes(img.size)})
                 </p>
               </div>
-              <div className="p-3">
+              <div className="flex items-center justify-between p-3">
                 <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
                   🏷️ {img.genre}
                 </span>
+                <img
+                  src={getFlagImage(img.region)}
+                  alt="{img.region}"
+                  className="w-8 h-auto border border-gray-300 rounded-xs"
+                />
               </div>
             </div>
           ))}

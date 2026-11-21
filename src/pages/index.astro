@@ -1,6 +1,7 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import { getImage } from "astro:assets";
-import GameView, { type GameItem, type ImageItem } from "../components/GameView";
+import GameView, { type GameItem } from "../components/GameView";
 import "../styles/global.css"; // Ensure Tailwind CSS is imported
 import games from "../data/games.json";
 import manifest from "../data/manifest.json";
@@ -12,7 +13,7 @@ const imageModules = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // Optimize each image with getImage() at build time
-const images: ImageItem[] = await Promise.all(
+const images = await Promise.all(
   Object.entries(imageModules).map(async ([path, mod]) => {
     const optimized = await getImage({ src: mod.default, width: 600, height: 600, format: "webp" });
     const filename = path.split("/").pop() ?? "";
@@ -24,8 +25,9 @@ const images: ImageItem[] = await Promise.all(
 
 // Merge images and games
 const imageMap = new Map(images.map((image) => [image.id, image]));
-const gameList = games.map((game) => {
-  const match = imageMap.get(game.id);
+
+const gameList: GameItem[] = games.map((game) => {
+  const match = imageMap.get(game.id) || imageMap.get("PLACEHOLDER") || { src: "", filename: "", id: "" };
   const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");
 
   if (!match) {
@@ -34,24 +36,31 @@ const gameList = games.map((game) => {
 
   return {
     ...game,
-    pkgInfo,
-    ...(match || { src: null, filename: "" }), // Använder standardvärden om match saknas
+    owner: game.owner ?? false,
+    played: game.played ?? false,
+    working: game.working ?? false,
+    comment: game.comment ?? "",
+    ...match,
+    latestUpdate: pkgInfo?.LatestUpdate ?? "",
+    altName: pkgInfo?.Title ?? "",
+    region: pkgInfo?.Region ?? "",
+    // pkgInfo,
   };
 });
 
-console.log("INFO: Found images:", images.length);
+// console.log("INFO: Found images:", images.length);
 console.log(gameList[0]);
 
 // const genres = new Set(games.map((game) => game.genre));
 // console.log(genres);
-
 ---
 
-<body class="bg-gray-50 text-gray-900 min-h-screen">
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-3xl font-bold tracking-tight mb-8">PS4 Games</h1>
-
-    <!-- Hydrate React component on the client -->
-    <GameView client:load games={gameList} />
-  </main>
-</body>
+<Layout>
+  <div class="bg-gray-50 text-gray-900 min-h-screen">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 class="text-3xl font-bold tracking-tight mb-8">PS4 Games</h1>
+      <!-- Hydrate React component on the client -->
+      <GameView client:load games={gameList} />
+    </main>
+  </div>
+</Layout>
