@@ -2,6 +2,8 @@
 
 ## Astro site
 
+[PS4 Games](https://ropaolle.github.io/ps4covers/)
+
 ```sh
 git clone git@github.com:ropaolle/ps4covers.git
 
