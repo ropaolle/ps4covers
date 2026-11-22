@@ -12,10 +12,12 @@ export interface GameItem {
   genre: string;
   backup: string;
   owner: boolean;
-  played: boolean;
+  completed: boolean;
+  ignore: boolean;
   version: string;
   working: boolean;
   dlcs: string;
+  comment: string;
   latestUpdate: string;
   region: string;
   altName: string;
@@ -23,6 +25,7 @@ export interface GameItem {
 
 interface Props {
   games: GameItem[];
+  genres: string[];
 }
 
 function getFlagImage(region: string) {
@@ -38,7 +41,7 @@ function getFlagImage(region: string) {
   }
 }
 
-function formatBytes(bytes: number, decimals = 2) {
+function formatBytes(bytes: number, decimals = 0) {
   if (bytes === 0) return "0 Bytes";
 
   const k = 1024; // Change to 1000 for decimal units
@@ -48,14 +51,15 @@ function formatBytes(bytes: number, decimals = 2) {
   return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
 }
 
-export default function GameView({ games }: Props) {
+export default function GameView({ games, genres }: Props) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("");
+  const [genre, setGenre] = useState("");
 
   // Filter games case-insensitively based on the filename
   const filteredImages = games.filter(
     (img) =>
-      // img.name.toLowerCase().includes(query.toLowerCase().trim()),
+      // (img.ignore || img.completed) &&
       img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
       img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
@@ -81,6 +85,15 @@ export default function GameView({ games }: Props) {
 
   const sortedImages = sortedImagesByName();
 
+  const Badge = ({ value, icon, title }: { value: string | boolean; icon: string; title: string }) => {
+    if (!value) return null;
+    return (
+      <p className="text-right font-medium text-xl text-black" title={`${title}`}>
+        {icon}
+      </p>
+    );
+  };
+
   return (
     <div className="space-y-6">
       {/* Filter Input */}
@@ -92,6 +105,7 @@ export default function GameView({ games }: Props) {
           placeholder="Filter by name and tag..."
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
+
         <select
           value={sort}
           onChange={(e) => setSort(e.target.value)}
@@ -108,6 +122,19 @@ export default function GameView({ games }: Props) {
           <option value="dlcs">DLC's</option>
           <option value="owner">Owner</option>
         </select>
+
+        <select
+          value={genre}
+          onChange={(e) => setGenre(e.target.value)}
+          className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
+          {[...genres].sort().map((genre) => (
+            <option key={genre} value={genre}>
+              {genre}
+            </option>
+          ))}
+        </select>
+
         <p className="text-sm text-gray-500">
           Showing {filteredImages.length} of {games.length} games
         </p>
@@ -121,7 +148,7 @@ export default function GameView({ games }: Props) {
               key={img.src}
               className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md"
             >
-              <div className="relative aspect-square overflow-hidden bg-gray-100">
+              <div className="relative aspect-square overflow-hidden bg-gray-100" title={img.id}>
                 <img
                   src={img.src}
                   alt={img.filename}
@@ -129,43 +156,48 @@ export default function GameView({ games }: Props) {
                   className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${img.working ? "" : "grayscale opacity-25"}`}
                 />
                 <div className="absolute inset-0 flex items-end justify-end p-4">
-                  <p
-                    className="text-right font-medium text-xl text-black"
+                  <Badge
+                    value={img.latestUpdate !== "No Update" && img.latestUpdate > img.version}
+                    icon="⚠️"
                     title={`${img.version} (latest ${img.latestUpdate})`}
-                  >
-                    {img.latestUpdate !== "No Update" && img.latestUpdate > img.version ? "⚠️" : ""}
-                  </p>
-                  {img.dlcs && (
-                    <p className="text-right font-medium text-xl text-black" title={`${img.dlcs}`}>
-                      📦
-                    </p>
-                  )}
-                  {img.backup && (
-                    <p className="text-right font-medium text-xl text-black" title={`${img.backup}`}>
-                      💾
-                    </p>
-                  )}
-                  {img.owner && (
-                    <p className="text-right font-medium text-xl text-black" title="Köpt">
-                      💳
-                    </p>
-                  )}
+                  />
+                  <Badge value={img.dlcs} icon="📦" title={img.dlcs} />
+                  <Badge value={img.backup} icon="💾" title={img.backup} />
+                  <Badge value={img.owner} icon="💳" title="Köpt i PSN" />
+                  <Badge value={img.completed} icon="👍" title="Completed" />
+                  <Badge value={img.ignore} icon="👎" title="Ignore" />
                 </div>
               </div>
+
               <div className="p-3">
-                <p className="truncate text-sm font-medium text-gray-700" title={JSON.stringify(img)}>
-                  {img.altName} ({formatBytes(img.size)})
-                </p>
-              </div>
-              <div className="flex items-center justify-between p-3">
-                <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                  🏷️ {img.genre}
-                </span>
-                <img
-                  src={getFlagImage(img.region)}
-                  alt="{img.region}"
-                  className="w-8 h-auto border border-gray-300 rounded-xs"
-                />
+                <div className="flex items-center justify-between">
+                  <p
+                    className="truncate text-sm font-medium text-gray-700"
+                    title={`${img.id} - ${img.altName}: ${formatBytes(img.size, 2)}`}
+                  >
+                    {img.altName}
+                  </p>
+                  <p className="text-sm text-gray-700 ml-2 text-nowrap" title={img.id}>
+                    {formatBytes(img.size)}
+                  </p>
+                </div>
+
+                <div>
+                  <p className="truncate text-xs font-medium text-gray-500 py-2" title={img.comment}>
+                    {img.comment}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    🏷️ {img.genre}
+                  </span>
+                  <img
+                    src={getFlagImage(img.region)}
+                    alt="{img.region}"
+                    className="w-8 h-auto border border-gray-300 rounded-xs"
+                  />
+                </div>
               </div>
             </div>
           ))}

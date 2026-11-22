@@ -33,7 +33,8 @@ const gameList: GameItem[] = games.map((game) => {
   return {
     ...game,
     owner: game.owner ?? false,
-    played: game.played ?? false,
+    completed: game.completed ?? false,
+    ignore: game.ignore ?? false,
     working: game.working ?? false,
     comment: game.comment ?? "",
     dlcs: game.dlcs ?? "",
@@ -45,6 +46,9 @@ const gameList: GameItem[] = games.map((game) => {
 });
 
 console.log("gameList", gameList[0]);
+const genreSet = new Set(games.map((game) => game.genre.split(",").map((g) => g.trim())).flat());
+// console.log(genreSet);
+
 ---
 
 <Layout>
@@ -52,7 +56,7 @@ console.log("gameList", gameList[0]);
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 class="text-3xl font-bold tracking-tight mb-8">PS4 Games</h1>
       <!-- Hydrate React component on the client -->
-      <GameView client:load games={gameList} />
+      <GameView client:load games={gameList} genres={Array.from(genreSet)} />
     </main>
   </div>
 </Layout>
