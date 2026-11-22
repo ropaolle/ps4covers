@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { getImage } from "astro:assets";
 import GameView, { type GameItem } from "../components/GameView";
-import "../styles/global.css"; // Ensure Tailwind CSS is imported
+import "../styles/global.css";
 import games from "../data/games.json";
 import manifest from "../data/manifest.json";
 
@@ -36,18 +36,15 @@ const gameList: GameItem[] = games.map((game) => {
     played: game.played ?? false,
     working: game.working ?? false,
     comment: game.comment ?? "",
+    dlcs: game.dlcs ?? "",
     ...match,
     latestUpdate: pkgInfo?.LatestUpdate ?? "",
     altName: pkgInfo?.Title ?? "",
     region: pkgInfo?.Region ?? "",
-    // pkgInfo,
   };
 });
 
-// console.log("INFO: Found images:", images.length);
-// console.log(gameList[0]);
-// const genres = new Set(games.map((game) => game.genre));
-// console.log(genres);
+console.log("gameList", gameList[0]);
 ---
 
 <Layout>

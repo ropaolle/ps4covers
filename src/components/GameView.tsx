@@ -15,7 +15,7 @@ export interface GameItem {
   played: boolean;
   version: string;
   working: boolean;
-  dlcs: string | null;
+  dlcs: string;
   latestUpdate: string;
   region: string;
   altName: string;
@@ -50,6 +50,7 @@ function formatBytes(bytes: number, decimals = 2) {
 
 export default function GameView({ games }: Props) {
   const [query, setQuery] = useState("");
+  const [sort, setSort] = useState("");
 
   // Filter games case-insensitively based on the filename
   const filteredImages = games.filter(
@@ -59,9 +60,26 @@ export default function GameView({ games }: Props) {
       img.name.toLowerCase().includes(query.toLowerCase().trim()),
   );
 
-  const sortedImages = filteredImages.sort((a, b) => a.name.localeCompare(b.name));
-  // const sortedImages = filteredImages.sort((a, b) => a.id.localeCompare(b.id));
-  // const sortedImages = filteredImages.sort((a, b) => b.size - a.size);
+  const sortedImagesByName = () => {
+    switch (sort) {
+      case "name":
+      case "id":
+      case "genre":
+      case "backup":
+      case "region":
+        return filteredImages.sort((a, b) => a[sort].localeCompare(b[sort]));
+      case "dlcs":
+        return filteredImages.sort((a, b) => b[sort].localeCompare(a[sort]));
+      case "owner":
+        return filteredImages.sort((a, b) => Number(b.owner) - Number(a.owner));
+      case "size":
+        return filteredImages.sort((a, b) => b.size - a.size);
+      default:
+        return filteredImages;
+    }
+  };
+
+  const sortedImages = sortedImagesByName();
 
   return (
     <div className="space-y-6">
@@ -74,6 +92,22 @@ export default function GameView({ games }: Props) {
           placeholder="Filter by name and tag..."
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value)}
+          className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
+          <option value="name" selected>
+            Name
+          </option>
+          <option value="id">Id</option>
+          <option value="size">Size</option>
+          <option value="genre">Genre</option>
+          <option value="backup">Backup</option>
+          <option value="region">Region</option>
+          <option value="dlcs">DLC's</option>
+          <option value="owner">Owner</option>
+        </select>
         <p className="text-sm text-gray-500">
           Showing {filteredImages.length} of {games.length} games
         </p>
