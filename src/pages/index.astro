@@ -30,10 +30,6 @@ const gameList: GameItem[] = games.map((game) => {
   const match = imageMap.get(game.id) || imageMap.get("PLACEHOLDER") || { src: "", filename: "", id: "" };
   const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");
 
-  if (!match) {
-    console.warn(`WARNING: No matching image found for game ID: ${game.id}`);
-  }
-
   return {
     ...game,
     owner: game.owner ?? false,
@@ -49,8 +45,7 @@ const gameList: GameItem[] = games.map((game) => {
 });
 
 // console.log("INFO: Found images:", images.length);
-console.log(gameList[0]);
-
+// console.log(gameList[0]);
 // const genres = new Set(games.map((game) => game.genre));
 // console.log(genres);
 ---

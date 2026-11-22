@@ -1625,6 +1625,19 @@
     "comment": null
   },
   {
+    "name": "Planet of Lana II",
+    "id": "CUSA49313",
+    "size": 8570404864,
+    "genre": "Action Adventure",
+    "backup": "DS918",
+    "owner": null,
+    "played": null,
+    "version": "01.03",
+    "working": true,
+    "dlcs": null,
+    "comment": null
+  },
+  {
     "name": "Psychonauts 2",
     "id": "CUSA27145",
     "size": 33655947264,
@@ -1828,9 +1841,9 @@
     "owner": null,
     "played": null,
     "version": "01.04",
-    "working": false,
+    "working": true,
     "dlcs": null,
-    "comment": "Krashar med error CE-34878-0"
+    "comment": null
   },
   {
     "name": "Shenmue III",
