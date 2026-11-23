@@ -13,7 +13,7 @@ export interface GameItem {
   backup: string;
   owner: boolean;
   completed: boolean;
-  ignore: boolean;
+  playing: boolean;
   version: string;
   working: boolean;
   dlcs: string;
@@ -28,17 +28,10 @@ interface Props {
   genres: [string, number][];
 }
 
-function getFlagImage(region: string) {
-  switch (region.toLowerCase()) {
-    case "us":
-      return usFlag.src;
-    case "eu":
-      return euFlag.src;
-    case "japan":
-      return japanFlag.src;
-    default:
-      return "";
-  }
+const FLAG_MAP: Record<string, { src: string }> = { us: usFlag, eu: euFlag, japan: japanFlag };
+
+function getFlagImage(region: string): string {
+  return FLAG_MAP[region.toLowerCase()]?.src ?? "";
 }
 
 function formatBytes(bytes: number, decimals = 0) {
@@ -57,24 +50,21 @@ export default function GameView({ games, genres }: Props) {
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
   const [genre, setGenre] = useState("");
   const [completedOnly, setCompletedOnly] = useState(false);
-  const [ignoreOnly, setIgnoreOnly] = useState(false);
+  const [playingOnly, setPlayingOnly] = useState(false);
   const [selectedOnly, setSelectedOnly] = useState(false);
   const [selectedGameIds, setSelectedGameIds] = useState<string[]>([]);
 
-  // console.log(selectedGameIds);
-
-  // Filter games case-insensitively by name or genre
   const filteredImages = games.filter(
     (img) =>
       (!completedOnly || img.completed) &&
-      (!ignoreOnly || img.ignore) &&
+      (!playingOnly || img.playing) &&
       (!selectedOnly || selectedGameIds.includes(img.id)) &&
       (!genre || img.genre.split(",").some((item) => item.trim() === genre)) &&
       (img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
         img.name.toLowerCase().includes(query.toLowerCase().trim())),
   );
 
-  const sortedImagesByName = () => {
+  const sortedImages = () => {
     if (!sort) return filteredImages;
 
     const direction = sortDirection === "asc" ? 1 : -1;
@@ -92,8 +82,6 @@ export default function GameView({ games, genres }: Props) {
       return aValue.localeCompare(bValue) * direction;
     });
   };
-
-  const sortedImages = sortedImagesByName();
 
   const Badge = ({ value, icon, title }: { value: string | boolean; icon: string; title: string }) => {
     if (!value) return null;
@@ -147,6 +135,7 @@ export default function GameView({ games, genres }: Props) {
           <option value="region">Region</option>
           <option value="dlcs">DLC's</option>
           <option value="owner">Owner</option>
+          <option value="comment">Comment</option>
         </select>
 
         <button
@@ -183,11 +172,11 @@ export default function GameView({ games, genres }: Props) {
         <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
           <input
             type="checkbox"
-            checked={ignoreOnly}
-            onChange={(e) => setIgnoreOnly(e.target.checked)}
+            checked={playingOnly}
+            onChange={(e) => setPlayingOnly(e.target.checked)}
             className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
           />
-          Ignore
+          Playing
         </label>
         <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
           <input
@@ -203,7 +192,7 @@ export default function GameView({ games, genres }: Props) {
       {/* Responsive Image Grid */}
       {filteredImages.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {sortedImages.map((img) => (
+          {sortedImages().map((img) => (
             <div
               key={img.src}
               className={`group overflow-hidden rounded-lg border transition ${
@@ -246,7 +235,6 @@ export default function GameView({ games, genres }: Props) {
                   <Badge value={img.backup} icon="💾" title={img.backup} />
                   <Badge value={img.owner} icon="💳" title="Köpt i PSN" />
                   <Badge value={img.completed} icon="👍" title="Completed" />
-                  <Badge value={img.ignore} icon="👎" title="Ignore" />
                 </div>
               </div>
 
