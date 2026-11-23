@@ -13,7 +13,10 @@ const buildNumber = import.meta.env.BUILD_NUMBER ?? 'dev';
 //   day: 'numeric',
 //   timeZone: 'UTC',
 // });
-const buildDate = new Date().toISOString().slice(0, 10);
+
+// const now = new Date();
+// console.log(now.toLocaleString()); 
+const buildDate = new Date().toLocaleString();
 
 // Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
