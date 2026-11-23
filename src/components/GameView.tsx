@@ -54,7 +54,7 @@ function formatBytes(bytes: number, decimals = 0) {
 export default function GameView({ games, genres }: Props) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("name");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
   const [genre, setGenre] = useState("");
   const [completedOnly, setCompletedOnly] = useState(false);
   const [ignoreOnly, setIgnoreOnly] = useState(false);
@@ -220,13 +220,18 @@ export default function GameView({ games, genres }: Props) {
                   </p>
                 </div>
 
-                <div>
-                  <p className="truncate text-xs font-medium text-gray-500 py-2" title={img.comment}>
-                    {img.comment}
+                {img.dlcs && (
+                  <p className="truncate text-xs font-medium text-gray-500 pt-1" title={img.dlcs}>
+                    DLC: {img.dlcs}
                   </p>
-                </div>
+                )}
+                {img.comment && (
+                  <p className="truncate text-xs font-medium text-gray-500 pt-1" title={img.comment}>
+                    Comment: {img.comment}
+                  </p>
+                )}
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between pt-2">
                   <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
                     🏷️ {img.genre}
                   </span>
