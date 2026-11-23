@@ -46,18 +46,18 @@ const gameList: GameItem[] = games.map((game) => {
 });
 
 console.log("gameList", gameList[0]);
-const genreSet = new Set(games.map((game) => game.genre.split(",").map((g) => g.trim())).flat());
+const genreMap = games
+  .map((game) => game.genre.split(",").map((item) => item.trim()))
+  .flat()
+  .filter(Boolean)
+  .reduce<Record<string, number>>((counts, genre) => {
+    counts[genre] = (counts[genre] ?? 0) + 1;
+    return counts;
+  }, {});
 
-// const genres = games.map((game) => game.genre.split(",")).flat().map((str) => str.trim()).reduce<Record<string, number>>((acc, item) => {
-//   acc[item] = (acc[item] || 0) + 1;
-//   return acc;
-// }, {});
-
-// const sortedGenres = Object.fromEntries(
-//   Object.entries(genres).sort(([keyA], [keyB]) => keyA.localeCompare(keyB))
-// );
-
-// console.log(sortedGenres);
+const sortedGenres = Object.fromEntries(
+  Object.entries(genreMap).sort(([genreA], [genreB]) => genreA.localeCompare(genreB)),
+);
 
 ---
 
@@ -66,8 +66,7 @@ const genreSet = new Set(games.map((game) => game.genre.split(",").map((g) => g.
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 class="text-3xl font-bold tracking-tight mb-0">PS4 Games</h1>
       <!-- Hydrate React component on the client -->
-      <GameView client:load games={gameList} genres={Array.from(genreSet)} />
-      <!-- <GameView client:load games={gameList} genres={genres} /> -->
+      <GameView client:load games={gameList} genres={Object.entries(sortedGenres)} />
     </main>
   </div>
 </Layout>

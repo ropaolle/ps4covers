@@ -25,7 +25,7 @@ export interface GameItem {
 
 interface Props {
   games: GameItem[];
-  genres: string[];
+  genres: [string, number][];
 }
 
 function getFlagImage(region: string) {
@@ -63,6 +63,7 @@ export default function GameView({ games, genres }: Props) {
     (img) =>
       (!completedOnly || img.completed) &&
       (!ignoreOnly || img.ignore) &&
+      (!genre || img.genre.split(",").some((item) => item.trim() === genre)) &&
       (img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
         img.name.toLowerCase().includes(query.toLowerCase().trim())),
   );
@@ -137,16 +138,12 @@ export default function GameView({ games, genres }: Props) {
           onChange={(e) => setGenre(e.target.value)}
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         >
-          {[...genres].sort().map((genre) => (
-            <option key={genre} value={genre}>
-              {genre}
-            </option>
-          ))}
-          {/* {Object.entries(genres).map(([genre, count]) => (
+          <option value="">All genres ({games.length})</option>
+          {genres.map(([genre, count]) => (
             <option key={genre} value={genre}>
               {genre} ({count})
             </option>
-          ))} */}
+          ))}
         </select>
 
         <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
