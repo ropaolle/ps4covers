@@ -6,17 +6,9 @@ import "../styles/global.css";
 import games from "../data/games.json";
 import manifest from "../data/manifest.json";
 
-const buildNumber = import.meta.env.BUILD_NUMBER ?? 'dev';
-// const buildDate = new Date().toLocaleDateString('en-US', {
-//   year: 'numeric',
-//   month: 'short',
-//   day: 'numeric',
-//   timeZone: 'UTC',
-// });
-
-// const now = new Date();
-// console.log(now.toLocaleString()); 
-const buildDate = new Date().toLocaleString();
+const buildNumber = import.meta.env.BUILD_NUMBER ?? "dev";
+const buildDate = new Date().toLocaleDateString("sv-SE");
+const buildTime = new Date().toLocaleString("sv-SE");
 
 // Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
@@ -76,7 +68,9 @@ const genres = Object.entries(genreCounts).sort(([a], [b]) => a.localeCompare(b)
 <Layout>
   <div class="bg-gray-50 text-gray-900 min-h-screen">
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 class="text-3xl font-bold tracking-tight mb-0">PS4 Games ({buildDate}, {buildNumber})</h1>
+      <h1 class="text-3xl font-bold tracking-tight mb-0" title=`Build ${buildNumber} (${buildTime})`>
+        PS4 Games {buildDate}
+      </h1>
       <!-- Hydrate React component on the client -->
       <GameView client:load games={gameList} genres={genres} />
     </main>
