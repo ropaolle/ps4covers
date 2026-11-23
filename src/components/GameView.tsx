@@ -55,13 +55,16 @@ export default function GameView({ games, genres }: Props) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("");
   const [genre, setGenre] = useState("");
+  const [completedOnly, setCompletedOnly] = useState(false);
+  const [ignoreOnly, setIgnoreOnly] = useState(false);
 
-  // Filter games case-insensitively based on the filename
+  // Filter games case-insensitively by name or genre
   const filteredImages = games.filter(
     (img) =>
-      // (img.ignore || img.completed) &&
-      img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
-      img.name.toLowerCase().includes(query.toLowerCase().trim()),
+      (!completedOnly || img.completed) &&
+      (!ignoreOnly || img.ignore) &&
+      (img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
+        img.name.toLowerCase().includes(query.toLowerCase().trim())),
   );
 
   const sortedImagesByName = () => {
@@ -96,6 +99,14 @@ export default function GameView({ games, genres }: Props) {
 
   return (
     <div className="space-y-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <p className="text-sm text-gray-500">
+          Showing {filteredImages.length} of {games.length} games
+        </p>
+      </div>
+
+      
+
       {/* Filter Input */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <input
@@ -135,9 +146,24 @@ export default function GameView({ games, genres }: Props) {
           ))}
         </select>
 
-        <p className="text-sm text-gray-500">
-          Showing {filteredImages.length} of {games.length} games
-        </p>
+        <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
+          <input
+            type="checkbox"
+            checked={completedOnly}
+            onChange={(e) => setCompletedOnly(e.target.checked)}
+            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          Completed
+        </label>
+        <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
+          <input
+            type="checkbox"
+            checked={ignoreOnly}
+            onChange={(e) => setIgnoreOnly(e.target.checked)}
+            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          Ignore
+        </label>
       </div>
 
       {/* Responsive Image Grid */}
