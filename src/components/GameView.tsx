@@ -117,6 +117,7 @@ export default function GameView({ games, genres }: Props) {
         />
 
         <select
+          name="sort"
           value={sort}
           onChange={(e) => setSort(e.target.value)}
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -138,7 +139,7 @@ export default function GameView({ games, genres }: Props) {
           onChange={(e) => setGenre(e.target.value)}
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         >
-          <option value="">All genres ({games.length})</option>
+          <option value="">ALL ({games.length})</option>
           {genres.map(([genre, count]) => (
             <option key={genre} value={genre}>
               {genre} ({count})
