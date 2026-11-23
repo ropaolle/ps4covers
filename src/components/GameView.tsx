@@ -58,12 +58,17 @@ export default function GameView({ games, genres }: Props) {
   const [genre, setGenre] = useState("");
   const [completedOnly, setCompletedOnly] = useState(false);
   const [ignoreOnly, setIgnoreOnly] = useState(false);
+  const [selectedOnly, setSelectedOnly] = useState(false);
+  const [selectedGameIds, setSelectedGameIds] = useState<string[]>([]);
+
+  // console.log(selectedGameIds);
 
   // Filter games case-insensitively by name or genre
   const filteredImages = games.filter(
     (img) =>
       (!completedOnly || img.completed) &&
       (!ignoreOnly || img.ignore) &&
+      (!selectedOnly || selectedGameIds.includes(img.id)) &&
       (!genre || img.genre.split(",").some((item) => item.trim() === genre)) &&
       (img.genre.toLowerCase().includes(query.toLowerCase().trim()) ||
         img.name.toLowerCase().includes(query.toLowerCase().trim())),
@@ -103,9 +108,17 @@ export default function GameView({ games, genres }: Props) {
     <div className="space-y-6">
       <div className="flex justify-end">
         <p className="text-sm text-gray-500">
-          Showing {filteredImages.length} of {games.length} games
+          Showing {filteredImages.length} of {games.length} games · {selectedGameIds.length} selected
         </p>
       </div>
+
+      {selectedGameIds.length > 0 && (
+        <div>
+          <p className="text-sm text-gray-500">
+            <span className="font-medium">Selected:</span> {selectedGameIds.join(", ")}
+          </p>
+        </div>
+      )}
 
       {/* Filter Input */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
@@ -176,6 +189,15 @@ export default function GameView({ games, genres }: Props) {
           />
           Ignore
         </label>
+        <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
+          <input
+            type="checkbox"
+            checked={selectedOnly}
+            onChange={(e) => setSelectedOnly(e.target.checked)}
+            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          Selected
+        </label>
       </div>
 
       {/* Responsive Image Grid */}
@@ -184,16 +206,37 @@ export default function GameView({ games, genres }: Props) {
           {sortedImages.map((img) => (
             <div
               key={img.src}
-              className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition hover:shadow-md"
+              className={`group overflow-hidden rounded-lg border transition ${
+                selectedGameIds.includes(img.id)
+                  ? "border-blue-600 bg-blue-50 shadow-xl ring-4 ring-blue-400"
+                  : "border-gray-200 bg-white shadow-sm hover:shadow-md"
+              }`}
             >
               <div className="relative aspect-square overflow-hidden bg-gray-100" title={img.id}>
-                <img
-                  src={img.src}
-                  alt={img.filename}
-                  loading="lazy"
-                  className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${img.working ? "" : "grayscale opacity-25"}`}
-                />
-                <div className="absolute inset-0 flex items-end justify-end p-4">
+                <button
+                  type="button"
+                  aria-label={`${selectedGameIds.includes(img.id) ? "Deselect" : "Select"} ${img.name}`}
+                  aria-pressed={selectedGameIds.includes(img.id)}
+                  onClick={() =>
+                    setSelectedGameIds((ids) =>
+                      ids.includes(img.id) ? ids.filter((id) => id !== img.id) : [...ids, img.id],
+                    )
+                  }
+                  className="block h-full w-full cursor-pointer p-0"
+                >
+                  <img
+                    src={img.src}
+                    alt=""
+                    loading="lazy"
+                    className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${img.working ? "" : "grayscale opacity-25"}`}
+                  />
+                </button>
+                {selectedGameIds.includes(img.id) && (
+                  <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-green-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-lg">
+                    ✓ Selected
+                  </span>
+                )}
+                <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-4">
                   <Badge
                     value={img.latestUpdate !== "No Update" && img.latestUpdate > img.version}
                     icon="⚠️"
