@@ -99,16 +99,14 @@ export default function GameView({ games, genres }: Props) {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex justify-end">
         <p className="text-sm text-gray-500">
           Showing {filteredImages.length} of {games.length} games
         </p>
       </div>
 
-      
-
       {/* Filter Input */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <input
           type="text"
           value={query}
@@ -144,6 +142,11 @@ export default function GameView({ games, genres }: Props) {
               {genre}
             </option>
           ))}
+          {/* {Object.entries(genres).map(([genre, count]) => (
+            <option key={genre} value={genre}>
+              {genre} ({count})
+            </option>
+          ))} */}
         </select>
 
         <label className="flex shrink-0 items-center gap-2 text-sm font-medium text-gray-700">
