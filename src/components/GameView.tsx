@@ -53,7 +53,8 @@ function formatBytes(bytes: number, decimals = 0) {
 
 export default function GameView({ games, genres }: Props) {
   const [query, setQuery] = useState("");
-  const [sort, setSort] = useState("");
+  const [sort, setSort] = useState("name");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
   const [genre, setGenre] = useState("");
   const [completedOnly, setCompletedOnly] = useState(false);
   const [ignoreOnly, setIgnoreOnly] = useState(false);
@@ -69,22 +70,22 @@ export default function GameView({ games, genres }: Props) {
   );
 
   const sortedImagesByName = () => {
-    switch (sort) {
-      case "name":
-      case "id":
-      case "genre":
-      case "backup":
-      case "region":
-        return filteredImages.sort((a, b) => a[sort].localeCompare(b[sort]));
-      case "dlcs":
-        return filteredImages.sort((a, b) => b[sort].localeCompare(a[sort]));
-      case "owner":
-        return filteredImages.sort((a, b) => Number(b.owner) - Number(a.owner));
-      case "size":
-        return filteredImages.sort((a, b) => b.size - a.size);
-      default:
-        return filteredImages;
-    }
+    if (!sort) return filteredImages;
+
+    const direction = sortDirection === "asc" ? 1 : -1;
+
+    return [...filteredImages].sort((a, b) => {
+      if (sort === "size") {
+        return (a.size - b.size) * direction;
+      }
+      if (sort === "owner") {
+        return (Number(a.owner) - Number(b.owner)) * direction;
+      }
+
+      const aValue = String(a[sort as keyof GameItem] ?? "");
+      const bValue = String(b[sort as keyof GameItem] ?? "");
+      return aValue.localeCompare(bValue) * direction;
+    });
   };
 
   const sortedImages = sortedImagesByName();
@@ -119,12 +120,13 @@ export default function GameView({ games, genres }: Props) {
         <select
           name="sort"
           value={sort}
-          onChange={(e) => setSort(e.target.value)}
+          onChange={(e) => {
+            setSort(e.target.value);
+            setSortDirection("desc");
+          }}
           className="w-full sm:max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         >
-          <option value="name" selected>
-            Name
-          </option>
+          <option value="name">Name</option>
           <option value="id">Id</option>
           <option value="size">Size</option>
           <option value="genre">Genre</option>
@@ -133,6 +135,15 @@ export default function GameView({ games, genres }: Props) {
           <option value="dlcs">DLC's</option>
           <option value="owner">Owner</option>
         </select>
+
+        <button
+          type="button"
+          onClick={() => setSortDirection((direction) => (direction === "asc" ? "desc" : "asc"))}
+          className="shrink-0 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
+          title={`Sort ${sortDirection === "asc" ? "ascending" : "descending"}; click to reverse`}
+        >
+          {sortDirection === "asc" ? "Asc ↑" : "Desc ↓"}
+        </button>
 
         <select
           value={genre}
