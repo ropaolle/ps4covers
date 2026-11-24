@@ -1,0 +1,68 @@
+---
+// Server-side Astro frontmatter (runs at build time)
+// Do NOT access localStorage here, as it only exists in the visitor's browser
+---
+
+<div>
+  <input id="note-input" type="text" placeholder="Type something to save..." />
+  <button id="save-btn">Save Data</button>
+  <button id="clear-btn">Clear Data</button>
+  <p>
+    Saved value: <strong id="display">None</strong>
+  </p>
+</div>
+
+<script>
+  const STORAGE_KEY = "my_astro_data";
+
+  const input = document.getElementById("note-input") as HTMLInputElement;
+  const display = document.getElementById("display");
+  const saveBtn = document.getElementById("save-btn");
+  const clearBtn = document.getElementById("clear-btn");
+
+  // 1. Read data when the page loads
+  function loadData() {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+
+    try {
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  }
+
+  // 2. Save JSON data
+  function saveData(data: unknown) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  // 3. Delete data
+  function clearData() {
+    localStorage.removeItem(STORAGE_KEY);
+  }
+
+  // Initialize UI on page load
+  const existing = loadData();
+  if (existing && display) {
+    display.textContent = existing.text;
+    input.value = existing.text;
+  }
+
+  // Save on button click
+  saveBtn?.addEventListener("click", () => {
+    const payload = {
+      text: input.value,
+      updatedAt: new Date().toISOString(),
+    };
+    saveData(payload);
+    if (display) display.textContent = payload.text;
+  });
+
+  // Clear on button click
+  clearBtn?.addEventListener("click", () => {
+    clearData();
+    input.value = "";
+    if (display) display.textContent = "None";
+  });
+</script>
