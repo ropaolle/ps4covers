@@ -25,7 +25,7 @@ const images = await Promise.all(
   }),
 );
 
-// Merge images and games
+// Merge images to the gameList
 const imageMap = new Map(images.map((image) => [image.id, image]));
 
 const gameList: GameItem[] = games.map((game) => {
@@ -45,6 +45,7 @@ const gameList: GameItem[] = games.map((game) => {
 
 // console.log("gameList", gameList[0]);
 
+// Create a list af genres that includes the count
 const genreCounts: Record<string, number> = {};
 
 for (const game of games) {
