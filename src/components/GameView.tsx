@@ -211,7 +211,7 @@ export default function GameView({ games, genres }: Props) {
                       ids.includes(img.id) ? ids.filter((id) => id !== img.id) : [...ids, img.id],
                     )
                   }
-                  className="block h-full w-full cursor-pointer p-0"
+                  className="relative block h-full w-full cursor-pointer p-0"
                 >
                   <img
                     src={img.src}
@@ -219,23 +219,23 @@ export default function GameView({ games, genres }: Props) {
                     loading="lazy"
                     className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${img.working ? "" : "grayscale opacity-25"}`}
                   />
+                  <div className="absolute bottom-4 right-4 rounded border border-white/20 bg-black/25 text-white backdrop-blur-sm transition hover:bg-black/75">
+                    <Badge
+                      value={img.latestUpdate !== "No Update" && img.latestUpdate > img.version}
+                      icon="⚠️"
+                      title={`${img.version} (latest ${img.latestUpdate})`}
+                    />
+                    <Badge value={img.dlcs} icon="📦" title={img.dlcs} />
+                    <Badge value={img.backup} icon="💾" title={img.backup} />
+                    <Badge value={img.owner} icon="💳" title="Köpt i PSN" />
+                    <Badge value={img.completed} icon="👍" title="Completed" />
+                  </div>
                 </button>
                 {selectedGameIds.includes(img.id) && (
                   <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-green-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-lg">
                     ✓ Selected
                   </span>
                 )}
-                <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-4">
-                  <Badge
-                    value={img.latestUpdate !== "No Update" && img.latestUpdate > img.version}
-                    icon="⚠️"
-                    title={`${img.version} (latest ${img.latestUpdate})`}
-                  />
-                  <Badge value={img.dlcs} icon="📦" title={img.dlcs} />
-                  <Badge value={img.backup} icon="💾" title={img.backup} />
-                  <Badge value={img.owner} icon="💳" title="Köpt i PSN" />
-                  <Badge value={img.completed} icon="👍" title="Completed" />
-                </div>
               </div>
 
               <div className="p-3">
