@@ -11,7 +11,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": "Innocence Coats of Arms",
-    "comment": null
+    "comment": null,
+    "altName": "A Plague Tale: Innocence",
+    "region": "EU",
+    "latestUpdate": "01.09"
   },
   {
     "name": "ABZU",
@@ -25,7 +28,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "ABZU",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Anodyne",
@@ -39,7 +45,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Anodyne",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Assassin's Creed Chronicles Trilogy",
@@ -53,7 +62,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Assassin’s Creed® Chronicles Trilogy",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Assassin's Creed IV Black Flag",
@@ -67,7 +79,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": "Freedom Cry",
-    "comment": null
+    "comment": null,
+    "altName": "Assassin's Creed® IV Black Flag",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Assassin's Creed Mirage",
@@ -81,7 +96,10 @@
     "version": "01.11",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Assassin's Creed® Mirage",
+    "region": "EU",
+    "latestUpdate": "01.12"
   },
   {
     "name": "Assassin's Creed Odyssey",
@@ -95,7 +113,10 @@
     "version": "01.56",
     "working": true,
     "dlcs": "The Fate of Atlantis, Legacy of the First Blade,Season Pass Value",
-    "comment": null
+    "comment": null,
+    "altName": "Assassin's Creed® Odyssey",
+    "region": "US",
+    "latestUpdate": "01.56"
   },
   {
     "name": "Assassin's Creed Origins",
@@ -109,7 +130,10 @@
     "version": "01.44",
     "working": true,
     "dlcs": "The Curse of the Pharaohs, The Hidden Ones",
-    "comment": null
+    "comment": null,
+    "altName": "Assassin's Creed® Origins",
+    "region": "EU",
+    "latestUpdate": "01.61"
   },
   {
     "name": "Assassin's Creed Valhalla",
@@ -123,7 +147,10 @@
     "version": "07.20",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Assassin's Creed® Valhalla",
+    "region": "US",
+    "latestUpdate": "09.00"
   },
   {
     "name": "Astroneer",
@@ -137,7 +164,10 @@
     "version": "01.64",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "ASTRONEER",
+    "region": "US",
+    "latestUpdate": "01.87"
   },
   {
     "name": "AtomicHeart",
@@ -151,7 +181,10 @@
     "version": "01.29",
     "working": true,
     "dlcs": "Atomic Pass",
-    "comment": null
+    "comment": null,
+    "altName": "AtomicHeart",
+    "region": "EU",
+    "latestUpdate": "01.33"
   },
   {
     "name": "Bad North",
@@ -165,7 +198,10 @@
     "version": "02.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Bad North",
+    "region": "EU",
+    "latestUpdate": "02.00"
   },
   {
     "name": "BADLAND: Game of the Year Edition",
@@ -179,7 +215,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "BADLAND: Game of the Year Edition",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Baltro",
@@ -193,10 +232,13 @@
     "version": "01.14",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Balatro",
+    "region": "US",
+    "latestUpdate": "01.14"
   },
   {
-    "name": "BATMAN: ARKHAM KNIGHT",
+    "name": "Batman: Arkham Knight",
     "id": "CUSA01764",
     "size": 48094052352,
     "genre": "Open-World Action",
@@ -207,7 +249,10 @@
     "version": "01.18",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "BATMAN™: ARKHAM KNIGHT",
+    "region": "US",
+    "latestUpdate": "01.18"
   },
   {
     "name": "BioShock: The Collection",
@@ -221,7 +266,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "BioShock: The Collection",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Borderlands: The Handsome Collection",
@@ -235,7 +283,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Borderlands: The Handsome Collection",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "Broken Sword 5 - the Serpent's Curse",
@@ -249,7 +300,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Broken Sword 5 - the Serpent's Curse",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Castlevania Requiem: Symphony Of The Night & Rondo Of Blood",
@@ -263,7 +317,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Castlevania Requiem: Symphony Of The Night & Rondo Of Blood",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Celeste",
@@ -277,7 +334,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Celeste",
+    "region": "US",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Chained Echoes",
@@ -291,7 +351,10 @@
     "version": "01.13",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Chained Echoes",
+    "region": "EU",
+    "latestUpdate": "01.20"
   },
   {
     "name": "Chaos on Deponia",
@@ -305,7 +368,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": "Kört ca 15%, fastnade aldrig riktigt",
-    "comment": null
+    "comment": null,
+    "altName": "Chaos on Deponia",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Child of Light",
@@ -319,7 +385,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Child of Light",
+    "region": "US",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Children of Zodiarcs",
@@ -333,7 +402,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Children of Zodiarcs",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Chronicles of Teddy: Harmony of Exidus",
@@ -347,7 +419,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Chronicles of Teddy: Harmony of Exidus",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Concrete Genie",
@@ -361,7 +436,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Concrete Genie",
+    "region": "US",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Control",
@@ -375,7 +453,10 @@
     "version": "01.12",
     "working": true,
     "dlcs": "AWE, The Foundation",
-    "comment": null
+    "comment": null,
+    "altName": "Control",
+    "region": "EU",
+    "latestUpdate": "01.12"
   },
   {
     "name": "Cosmic Star Heroine",
@@ -389,7 +470,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Cosmic Star Heroine",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Crash Bandicoot 4: It's About Time",
@@ -403,7 +487,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": "Totally Tubular",
-    "comment": null
+    "comment": null,
+    "altName": "Crash Bandicoot™ 4: It's About Time",
+    "region": "EU",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Crash Bandicoot: N-Sane Trilogy",
@@ -417,7 +504,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Crash Bandicoot N. Sane Trilogy",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Cult of the Lamb",
@@ -431,7 +521,10 @@
     "version": "01.29",
     "working": true,
     "dlcs": "Woolhaven",
-    "comment": null
+    "comment": null,
+    "altName": "Cult of the Lamb",
+    "region": "EU",
+    "latestUpdate": "01.35"
   },
   {
     "name": "Cyberpunk 2077",
@@ -445,7 +538,10 @@
     "version": "01.61",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Cyberpunk 2077",
+    "region": "US",
+    "latestUpdate": "01.61"
   },
   {
     "name": "DAVE THE DIVER",
@@ -459,7 +555,10 @@
     "version": "01.23",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "DAVE THE DIVER",
+    "region": "EU",
+    "latestUpdate": "01.41"
   },
   {
     "name": "Days Gone",
@@ -473,7 +572,10 @@
     "version": "01.84",
     "working": true,
     "dlcs": "Monkey Wrench",
-    "comment": null
+    "comment": null,
+    "altName": "DAYS GONE",
+    "region": "EU",
+    "latestUpdate": "01.81"
   },
   {
     "name": "DEATH STRANDING",
@@ -487,7 +589,10 @@
     "version": "01.13",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "DEATH STRANDING",
+    "region": "US",
+    "latestUpdate": "01.13"
   },
   {
     "name": "Death's Door",
@@ -501,7 +606,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Death's Door",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "DELTARUNE Chapter 1",
@@ -515,7 +623,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "DELTARUNE Chapter 1",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Detroit: Become Human",
@@ -529,7 +640,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Detroit: Become Human™",
+    "region": "US",
+    "latestUpdate": "01.08"
   },
   {
     "name": "Deus Ex: Mankind Divided",
@@ -543,7 +657,10 @@
     "version": "01.14",
     "working": true,
     "dlcs": "A Criminal Past",
-    "comment": null
+    "comment": null,
+    "altName": "Deus Ex: Mankind Divided™",
+    "region": "US",
+    "latestUpdate": "01.14"
   },
   {
     "name": "Disgaea - Hour of Darkness",
@@ -557,7 +674,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Disgaea - Hour of Darkness",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Disgaea 2 - Cursed Memories",
@@ -571,7 +691,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Disgaea 2 - Cursed Memories",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Disgaea 5: Alliance of Vengeance",
@@ -585,7 +708,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": "Metallia, Zetta Episode, Mao Episode, Adell Episode",
-    "comment": null
+    "comment": null,
+    "altName": "Disgaea 5: Alliance of Vengeance",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Disgaea 7: Vows of the Virtueless",
@@ -599,7 +725,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": "Div extra conten",
-    "comment": null
+    "comment": null,
+    "altName": "Disgaea 7: Vows of the Virtueless",
+    "region": "US",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Dishonored 2",
@@ -613,7 +742,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": "Imperial Assassins Pack",
-    "comment": null
+    "comment": null,
+    "altName": "Dishonored 2",
+    "region": "US",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Dishonored Definitive Edition",
@@ -627,7 +759,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Dishonored® Definitive Edition",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Divinity : Original Sin Enhanced Edition",
@@ -641,7 +776,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Divinity : Original Sin Enhanced Edition",
+    "region": "EU",
+    "latestUpdate": "01.08"
   },
   {
     "name": "Dragon Age: Inquisition",
@@ -655,7 +793,10 @@
     "version": "01.12",
     "working": true,
     "dlcs": "Trespasser ",
-    "comment": null
+    "comment": null,
+    "altName": "Dragon Age™: Inquisition",
+    "region": "US",
+    "latestUpdate": "01.13"
   },
   {
     "name": "DRAGON QUEST BUILDERS",
@@ -669,7 +810,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "DRAGON QUEST BUILDERS",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "DRAGON QUEST XI S: Echoes of an Elusive Age - Definitive Edition",
@@ -683,7 +827,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "DRAGON QUEST XI S: Echoes of an Elusive Age – Definitive Edition",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Dragon's Dogma 2: Dark Arisen",
@@ -697,7 +844,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Dragon's Dogma: Dark Arisen",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "ENDER MAGNOLIA: Bloom in the Mist",
@@ -711,7 +861,10 @@
     "version": "01.11",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "ENDER MAGNOLIA: Bloom in the Mist",
+    "region": "JAPAN",
+    "latestUpdate": "01.11"
   },
   {
     "name": "Enter the Gungeon",
@@ -725,7 +878,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Enter the Gungeon",
+    "region": "US",
+    "latestUpdate": "01.16"
   },
   {
     "name": "Exit the Gungeon",
@@ -739,7 +895,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Exit the Gungeon",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Fallout 4",
@@ -753,7 +912,10 @@
     "version": "01.37",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Fallout 4",
+    "region": "US",
+    "latestUpdate": "01.46"
   },
   {
     "name": "Far Cry 4",
@@ -767,7 +929,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": "Valley of the Yetis, Escape from Durgesh Prison",
-    "comment": null
+    "comment": null,
+    "altName": "Far Cry® 4",
+    "region": "EU",
+    "latestUpdate": "01.08"
   },
   {
     "name": "Far Cry 5",
@@ -781,7 +946,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": "Lost on Mars, DLC Vietnam",
-    "comment": null
+    "comment": null,
+    "altName": "Far Cry® 5",
+    "region": "US",
+    "latestUpdate": "01.19"
   },
   {
     "name": "Far Cry 6",
@@ -795,7 +963,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": "Season Pass",
-    "comment": null
+    "comment": null,
+    "altName": "Far Cry® 6",
+    "region": "US",
+    "latestUpdate": "01.12"
   },
   {
     "name": "Far Cry Primal",
@@ -809,7 +980,10 @@
     "version": "01.19",
     "working": true,
     "dlcs": "Legend of the Mammoth, Quick Path: Hunter and Warrior ",
-    "comment": null
+    "comment": null,
+    "altName": "Far Cry® Primal",
+    "region": "EU",
+    "latestUpdate": "01.04"
   },
   {
     "name": "FEZ",
@@ -823,7 +997,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FEZ",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "FINAL FANTASY",
@@ -837,7 +1014,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY",
+    "region": "EU",
+    "latestUpdate": "01.20"
   },
   {
     "name": "FINAL FANTASY Ⅻ THE ZODIAC AGE",
@@ -851,7 +1031,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY Ⅻ THE ZODIAC AGE",
+    "region": "US",
+    "latestUpdate": "01.08"
   },
   {
     "name": "FINAL FANTASY IX",
@@ -865,7 +1048,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY IX",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Final Fantasy Tactics",
@@ -879,7 +1065,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": "Included in CUSA48840",
-    "comment": null
+    "comment": null,
+    "altName": "Final Fantasy Tactics",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
@@ -893,7 +1082,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
+    "region": "JAPAN",
+    "latestUpdate": "01.51"
   },
   {
     "name": "FINAL FANTASY V",
@@ -907,7 +1099,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY V",
+    "region": "EU",
+    "latestUpdate": "01.21"
   },
   {
     "name": "FINAL FANTASY VI",
@@ -921,7 +1116,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY VI",
+    "region": "EU",
+    "latestUpdate": "01.21"
   },
   {
     "name": "FINAL FANTASY VII REMAKE",
@@ -935,7 +1133,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "FINAL FANTASY VII REMAKE",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "FINAL FANTASY XV",
@@ -949,7 +1150,10 @@
     "version": "01.29",
     "working": true,
     "dlcs": null,
-    "comment": "DVD"
+    "comment": "DVD",
+    "altName": "FINAL FANTASY XV",
+    "region": "EU",
+    "latestUpdate": "01.30"
   },
   {
     "name": "Firewatch",
@@ -963,7 +1167,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Firewatch",
+    "region": "US",
+    "latestUpdate": "01.08"
   },
   {
     "name": "Flower",
@@ -977,7 +1184,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Flower",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Frostpunk",
@@ -991,7 +1201,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Frostpunk",
+    "region": "US",
+    "latestUpdate": "01.05"
   },
   {
     "name": "God of War",
@@ -1005,7 +1218,10 @@
     "version": "01.35",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "God of War",
+    "region": "US",
+    "latestUpdate": "01.36"
   },
   {
     "name": "God of War Ragnarök",
@@ -1019,7 +1235,10 @@
     "version": "06.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "God of War Ragnarök",
+    "region": "US",
+    "latestUpdate": "06.05"
   },
   {
     "name": "Gran Turismo 7",
@@ -1033,7 +1252,10 @@
     "version": "01.44",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Gran Turismo® 7",
+    "region": "US",
+    "latestUpdate": "01.72"
   },
   {
     "name": "Grand Theft Auto V",
@@ -1047,7 +1269,10 @@
     "version": "01.57",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Grand Theft Auto V",
+    "region": "US",
+    "latestUpdate": "01.57"
   },
   {
     "name": "GRAVITY RUSH 2",
@@ -1061,7 +1286,10 @@
     "version": "01.11",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "GRAVITY RUSH™ 2",
+    "region": "US",
+    "latestUpdate": "01.11"
   },
   {
     "name": "Grow Home",
@@ -1075,7 +1303,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Grow Home",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Guacamelee! 2",
@@ -1089,7 +1320,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Guacamelee! 2",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Guacamelee! Super Turbo Championship Edition",
@@ -1103,7 +1337,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Guacamelee! Super Turbo Championship Edition",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Hades",
@@ -1117,7 +1354,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Hades",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Harvest Moon: The Winds of Anthos",
@@ -1131,7 +1371,10 @@
     "version": "01.43",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Harvest Moon: The Winds of Anthos",
+    "region": "EU",
+    "latestUpdate": "01.43"
   },
   {
     "name": "Hellblade: Senua's Sacrifice",
@@ -1145,7 +1388,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Hellblade: Senua's Sacrifice™",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Hitman 3",
@@ -1159,7 +1405,10 @@
     "version": "01.13",
     "working": true,
     "dlcs": "Deluxe Pack, Hitman 2 Expansion",
-    "comment": null
+    "comment": null,
+    "altName": "HITMAN 3",
+    "region": "US",
+    "latestUpdate": "01.40"
   },
   {
     "name": "Hitman GO",
@@ -1173,7 +1422,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Hitman GO: Definitive Edition",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Hogwarts Legacy",
@@ -1187,7 +1439,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Hogwarts Legacy",
+    "region": "EU",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Horizon Zero Dawn: Complete Edition",
@@ -1201,7 +1456,10 @@
     "version": "01.53",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Horizon Zero Dawn: Complete Edition",
+    "region": "US",
+    "latestUpdate": "01.54"
   },
   {
     "name": "Hunting Simulator 2",
@@ -1215,7 +1473,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": "A Ranger's Life, Bear Hunter Pack",
-    "comment": null
+    "comment": null,
+    "altName": "Hunting Simulator 2",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Immortals Fenyx Rising ",
@@ -1229,7 +1490,10 @@
     "version": "01.34",
     "working": true,
     "dlcs": "Myths of the Eastern Realm, A New God, The Lost Gods",
-    "comment": null
+    "comment": null,
+    "altName": "Immortals Fenyx Rising ™",
+    "region": "US",
+    "latestUpdate": "01.34"
   },
   {
     "name": "Inscryption",
@@ -1243,7 +1507,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Inscryption",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "INSIDE",
@@ -1257,7 +1524,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "INSIDE",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "It Takes Two",
@@ -1271,7 +1541,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "It Takes Two",
+    "region": "US",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Kena: Bridge of Spirits",
@@ -1285,7 +1558,10 @@
     "version": "02.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Kena: Bridge of Spirits",
+    "region": "US",
+    "latestUpdate": "02.08"
   },
   {
     "name": "Kentucky Route Zero: TV Edition",
@@ -1299,7 +1575,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Kentucky Route Zero: TV Edition",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Kerbal Space Program Enhanced Edition",
@@ -1313,7 +1592,10 @@
     "version": "01.15",
     "working": true,
     "dlcs": "Breaking Ground, History and Parts",
-    "comment": null
+    "comment": null,
+    "altName": "Kerbal Space Program Enhanced Edition",
+    "region": "EU",
+    "latestUpdate": "01.15"
   },
   {
     "name": "KINGDOM HEARTS Ⅲ",
@@ -1327,7 +1609,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "KINGDOM HEARTS Ⅲ",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "Lara Croft GO",
@@ -1341,10 +1626,13 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Lara Croft GO",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
-    "name": "LEGO MARVEL Super Heroes",
+    "name": "LEGO Marvel Super Heroes",
     "id": "CUSA00083",
     "size": 6272122880,
     "genre": "Open-World Action",
@@ -1355,7 +1643,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "LEGO® MARVEL Super Heroes",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "LEGO Star Wars: The Skywalker Saga",
@@ -1369,7 +1660,10 @@
     "version": "01.09",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "LEGO® Star Wars™: The Skywalker Saga",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "Life is Strange 2",
@@ -1383,7 +1677,10 @@
     "version": "01.17",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Life is Strange 2",
+    "region": "US",
+    "latestUpdate": "01.17"
   },
   {
     "name": "Life is Strange Remastered",
@@ -1397,7 +1694,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Life is Strange Remastered",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Life is Strange: True Colors",
@@ -1411,7 +1711,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Life is Strange: True Colors™",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "LittleBigPlanet3",
@@ -1425,7 +1728,10 @@
     "version": "01.28",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "LittleBigPlanet™3",
+    "region": "US",
+    "latestUpdate": "01.28"
   },
   {
     "name": "Mad Max",
@@ -1439,7 +1745,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Mad Max",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Maneater",
@@ -1453,7 +1762,10 @@
     "version": "01.13",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Maneater",
+    "region": "US",
+    "latestUpdate": "01.13"
   },
   {
     "name": "Marvel's Guardians of the Galaxy",
@@ -1467,7 +1779,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Marvel's Guardians of the Galaxy",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Marvel's Spider-Man",
@@ -1481,7 +1796,10 @@
     "version": "01.19",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Marvel's Spider-Man",
+    "region": "US",
+    "latestUpdate": "01.19"
   },
   {
     "name": "Mass Effect: Andromeda",
@@ -1495,7 +1813,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Mass Effect™: Andromeda § RpO®",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
@@ -1509,7 +1830,10 @@
     "version": "01.11",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
+    "region": "EU",
+    "latestUpdate": "01.12"
   },
   {
     "name": "Monster Hunter: World",
@@ -1523,7 +1847,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Monster Hunter: World",
+    "region": "EU",
+    "latestUpdate": "15.23"
   },
   {
     "name": "Moonlighter",
@@ -1537,7 +1864,10 @@
     "version": "01.16",
     "working": true,
     "dlcs": "Between Dimensions",
-    "comment": null
+    "comment": null,
+    "altName": "Moonlighter",
+    "region": "EU",
+    "latestUpdate": "01.16"
   },
   {
     "name": "Neon White",
@@ -1551,7 +1881,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Neon White",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Neverwinter Nights: Enhanced Edition",
@@ -1565,7 +1898,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Neverwinter Nights: Enhanced Edition",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Ni no Kuni II: Revenant Kingdom",
@@ -1579,7 +1915,10 @@
     "version": "04.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Ni no Kuni™ II: Revenant Kingdom",
+    "region": "EU",
+    "latestUpdate": "04.00"
   },
   {
     "name": "NieR:Automata",
@@ -1593,7 +1932,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "NieR:Automata",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Night in the Woods",
@@ -1607,7 +1949,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Night in the Woods",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "No Man's Sky",
@@ -1621,7 +1966,10 @@
     "version": "06.04",
     "working": true,
     "dlcs": null,
-    "comment": "Senaste ver jag spelat 05.58"
+    "comment": "Senaste ver jag spelat 05.58",
+    "altName": "No Man's Sky",
+    "region": "US",
+    "latestUpdate": "07.14"
   },
   {
     "name": "Observer: System Redux",
@@ -1635,7 +1983,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Observer: System Redux",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Oceanhorn",
@@ -1649,7 +2000,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Oceanhorn",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "OCTOPATH TRAVELER II",
@@ -1663,7 +2017,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "OCTOPATH TRAVELER II",
+    "region": "EU",
+    "latestUpdate": "01.11"
   },
   {
     "name": "Outer Wilds",
@@ -1677,7 +2034,10 @@
     "version": "01.15",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Outer Wilds",
+    "region": "US",
+    "latestUpdate": "01.17"
   },
   {
     "name": "Owlboy",
@@ -1691,7 +2051,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Owlboy",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Persona 3 Reload",
@@ -1705,7 +2068,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Persona 3 Reload",
+    "region": "US",
+    "latestUpdate": "01.11"
   },
   {
     "name": "Persona 4 GOLDEN",
@@ -1719,7 +2085,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Persona 4 GOLDEN",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Persona 5 Royal",
@@ -1733,7 +2102,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": "Köpt Persona 5"
+    "comment": "Köpt Persona 5",
+    "altName": "Persona 5 Royal",
+    "region": "US",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Planet of Lana",
@@ -1747,7 +2119,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Planet of Lana",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Planet of Lana II",
@@ -1761,7 +2136,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Planet of Lana 2",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Psychonauts 2",
@@ -1775,7 +2153,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Psychonauts 2",
+    "region": "US",
+    "latestUpdate": "01.09"
   },
   {
     "name": "Ratchet & Clank",
@@ -1789,7 +2170,10 @@
     "version": "01.09",
     "working": true,
     "dlcs": "The Bouncer Weapon",
-    "comment": null
+    "comment": null,
+    "altName": "Ratchet & Clank™",
+    "region": "US",
+    "latestUpdate": "01.09"
   },
   {
     "name": "Rayman Legends",
@@ -1803,7 +2187,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Rayman® Legends",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Red Dead Redemption",
@@ -1817,7 +2204,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Red Dead Redemption",
+    "region": "EU",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Red Dead Redemption 2",
@@ -1831,7 +2221,10 @@
     "version": "01.32",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Red Dead Redemption 2",
+    "region": "US",
+    "latestUpdate": "01.32"
   },
   {
     "name": "Rez Infinite",
@@ -1845,7 +2238,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Rez Infinite",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Rise of the Tomb Raider: 20 Year Celebration",
@@ -1859,7 +2255,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Rise of the Tomb Raider: 20 Year Celebration",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Rogue Galaxy",
@@ -1873,7 +2272,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": "PS2"
+    "comment": "PS2",
+    "altName": "Rogue Galaxy™",
+    "region": "US",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Rogue Legacy 2",
@@ -1887,7 +2289,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Rogue Legacy 2",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "SaGa Frontier Remastered",
@@ -1901,7 +2306,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "SaGa Frontier Remastered",
+    "region": "US",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Salt and Sanctuary",
@@ -1915,7 +2323,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Salt and Sanctuary",
+    "region": "US",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Sea of Stars",
@@ -1929,7 +2340,10 @@
     "version": "01.09",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Sea of Stars",
+    "region": "US",
+    "latestUpdate": "01.15"
   },
   {
     "name": "SHADOW OF THE COLOSSUS",
@@ -1943,7 +2357,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "SHADOW OF THE COLOSSUS™",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Shadow of the Tomb Raider",
@@ -1957,7 +2374,10 @@
     "version": "02.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Shadow of the Tomb Raider",
+    "region": "EU",
+    "latestUpdate": "02.01"
   },
   {
     "name": "Shenmue",
@@ -1971,7 +2391,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Shenmue",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Shenmue II",
@@ -1985,7 +2408,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Shenmue II",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Shenmue III",
@@ -1999,7 +2425,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Shenmue III",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Sherlock Holmes: The Devil's Daughter",
@@ -2013,7 +2442,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Sherlock Holmes: The Devil's Daughter",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Shovel Knight",
@@ -2027,7 +2459,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Shovel Knight",
+    "region": "US",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Silence",
@@ -2041,7 +2476,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Silence",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Sleeping Dogs: Definitive Edition",
@@ -2055,7 +2493,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Sleeping Dogs: Definitive Edition",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Sniper Elite 3 Ultimate Edition",
@@ -2069,7 +2510,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Sniper Elite 3 Ultimate Edition",
+    "region": "US",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Sniper Elite 5",
@@ -2083,7 +2527,10 @@
     "version": "01.29",
     "working": true,
     "dlcs": "Kraken Awakens, Landing Force",
-    "comment": null
+    "comment": null,
+    "altName": "Sniper Elite 5",
+    "region": "US",
+    "latestUpdate": "01.31"
   },
   {
     "name": "SnowRunner",
@@ -2097,7 +2544,10 @@
     "version": "01.64",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "SnowRunner",
+    "region": "US",
+    "latestUpdate": "01.73"
   },
   {
     "name": "South Park: The Fractured But Whole",
@@ -2111,7 +2561,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": "Season Pass",
-    "comment": null
+    "comment": null,
+    "altName": "South Park™: The Fractured But Whole™",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "Spelunky 2",
@@ -2125,7 +2578,10 @@
     "version": "01.24",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Spelunky 2",
+    "region": "US",
+    "latestUpdate": "01.28"
   },
   {
     "name": "Spyro Reignited Trilogy",
@@ -2139,7 +2595,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Spyro Reignited Trilogy",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Star Wars Jedi: Fallen Order",
@@ -2153,7 +2612,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": "Delux Upgrade",
-    "comment": null
+    "comment": null,
+    "altName": "STAR WARS Jedi: Fallen Order™",
+    "region": "US",
+    "latestUpdate": "01.12"
   },
   {
     "name": "Stardew Valley",
@@ -2167,7 +2629,10 @@
     "version": "01.63",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Stardew Valley",
+    "region": "US",
+    "latestUpdate": "01.66"
   },
   {
     "name": "SteamWorld Collection",
@@ -2181,7 +2646,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "SteamWorld Collection",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "STORY OF SEASONS: Pioneers of Olive Town",
@@ -2195,7 +2663,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "STORY OF SEASONS: Pioneers of Olive Town",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Stray",
@@ -2209,7 +2680,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Stray",
+    "region": "EU",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Subnautica",
@@ -2223,7 +2697,10 @@
     "version": "01.21",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Subnautica",
+    "region": "US",
+    "latestUpdate": "01.22"
   },
   {
     "name": "Subnautica Below Zero",
@@ -2237,7 +2714,10 @@
     "version": "01.21",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Subnautica Below Zero",
+    "region": "US",
+    "latestUpdate": "01.22"
   },
   {
     "name": "Tactics Ogre: Reborn",
@@ -2251,7 +2731,10 @@
     "version": "01.07",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Tactics Ogre: Reborn",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Tearaway Unfolded",
@@ -2265,7 +2748,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Tearaway™ Unfolded",
+    "region": "EU",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Terraria",
@@ -2279,7 +2765,10 @@
     "version": "01.41",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Terraria",
+    "region": "US",
+    "latestUpdate": "01.43"
   },
   {
     "name": "The Artful Escape ",
@@ -2293,7 +2782,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Artful Escape",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "The Binding of Isaac: Afterbirth+",
@@ -2307,7 +2799,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Binding of Isaac: Afterbirth+",
+    "region": "EU",
+    "latestUpdate": "01.06"
   },
   {
     "name": "The Binding of Isaac: Rebirth",
@@ -2321,7 +2816,10 @@
     "version": "01.16",
     "working": true,
     "dlcs": "Afterbirth, Repentance",
-    "comment": null
+    "comment": null,
+    "altName": "The Binding of Isaac: Rebirth",
+    "region": "US",
+    "latestUpdate": "01.17"
   },
   {
     "name": "The Last Campfire",
@@ -2335,7 +2833,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": "01.07 update gick inta ett installera"
+    "comment": "01.07 update gick inta ett installera",
+    "altName": "The Last Campfire",
+    "region": "EU",
+    "latestUpdate": "01.09"
   },
   {
     "name": "The Legend of Heroes: Trails through Daybreak",
@@ -2349,7 +2850,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": "Free Sample Set, Starter Set",
-    "comment": null
+    "comment": null,
+    "altName": "The Legend of Heroes: Trails through Daybreak",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "The Legend of Heroes: Trails to Azure",
@@ -2363,7 +2867,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Legend of Heroes: Trails to Azure",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "The Outer Worlds",
@@ -2377,7 +2884,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Outer Worlds",
+    "region": "EU",
+    "latestUpdate": "01.08"
   },
   {
     "name": "The Sexy Brutale",
@@ -2391,7 +2901,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Sexy Brutale",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "The Stanley Parable: Ultra Deluxe",
@@ -2405,7 +2918,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Stanley Parable: Ultra Deluxe",
+    "region": "EU",
+    "latestUpdate": "01.05"
   },
   {
     "name": "The Swapper",
@@ -2419,7 +2935,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Swapper",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "The Talos Principle",
@@ -2433,7 +2952,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Talos Principle",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "The Vanishing of Ethan Carter",
@@ -2447,7 +2969,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Vanishing of Ethan Carter",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "The Witcher 3: Wild Hunt - Complete Edition",
@@ -2461,7 +2986,10 @@
     "version": "04.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Witcher 3: Wild Hunt – Complete Edition",
+    "region": "US",
+    "latestUpdate": "04.06"
   },
   {
     "name": "The Witness",
@@ -2475,7 +3003,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "The Witness",
+    "region": "EU",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Thimbleweed Park",
@@ -2489,7 +3020,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Thimbleweed Park",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "Thomas Was Alone",
@@ -2503,7 +3037,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Thomas Was Alone",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Titanfall 2",
@@ -2517,7 +3054,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Titanfall™ 2",
+    "region": "US",
+    "latestUpdate": "01.13"
   },
   {
     "name": "Tomb Raider: Definitive Edition",
@@ -2531,7 +3071,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Tomb Raider: Definitive Edition",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Transistor",
@@ -2545,7 +3088,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Transistor",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Trials of Mana",
@@ -2559,7 +3105,10 @@
     "version": "01.11",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Trials of Mana",
+    "region": "US",
+    "latestUpdate": "01.11"
   },
   {
     "name": "Trine 2",
@@ -2573,7 +3122,10 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Trine 2",
+    "region": "US",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Trine 4: The Nightmare Prince",
@@ -2587,7 +3139,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Trine 4: The Nightmare Prince",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Tunic",
@@ -2601,7 +3156,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Tunic",
+    "region": "EU",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Uncharted 4: A Thief's End",
@@ -2615,7 +3173,10 @@
     "version": "01.33",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Uncharted 4: A Thief’s End™",
+    "region": "US",
+    "latestUpdate": "01.33"
   },
   {
     "name": "Uncharted: The Lost Legacy",
@@ -2629,7 +3190,10 @@
     "version": "01.09",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Uncharted: The Lost Legacy™",
+    "region": "US",
+    "latestUpdate": "01.09"
   },
   {
     "name": "Undertale",
@@ -2643,7 +3207,10 @@
     "version": "01.08",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Undertale",
+    "region": "US",
+    "latestUpdate": "01.08"
   },
   {
     "name": "Unpacking",
@@ -2657,7 +3224,10 @@
     "version": "01.02",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Unpacking",
+    "region": "US",
+    "latestUpdate": "01.02"
   },
   {
     "name": "Unravel",
@@ -2671,7 +3241,10 @@
     "version": "01.00",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Unravel",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Unravel TWO",
@@ -2685,7 +3258,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Unravel TWO",
+    "region": "EU",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Valiant Hearts: The Great War",
@@ -2699,7 +3275,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Valiant Hearts: The Great War",
+    "region": "EU",
+    "latestUpdate": "No Update"
   },
   {
     "name": "Wasteland 2: Director's Cut",
@@ -2713,7 +3292,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Wasteland 2: Director's Cut",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Wasteland 3",
@@ -2727,7 +3309,10 @@
     "version": "01.26",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Wasteland 3",
+    "region": "EU",
+    "latestUpdate": "01.26"
   },
   {
     "name": "WATCH_DOGS 2",
@@ -2741,7 +3326,10 @@
     "version": "01.18",
     "working": true,
     "dlcs": "Human Conditions",
-    "comment": null
+    "comment": null,
+    "altName": "WATCH_DOGS® 2",
+    "region": "EU",
+    "latestUpdate": "01.18"
   },
   {
     "name": "What Remains of Edith Finch",
@@ -2755,7 +3343,10 @@
     "version": "01.01",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "What Remains of Edith Finch",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "WORLD OF FINAL FANTASY",
@@ -2769,7 +3360,10 @@
     "version": "01.04",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "WORLD OF FINAL FANTASY",
+    "region": "US",
+    "latestUpdate": "01.04"
   },
   {
     "name": "XCOM 2",
@@ -2783,7 +3377,10 @@
     "version": "01.06",
     "working": true,
     "dlcs": "War of the Chosen , Shen's Last Gift , Alien Hunters ",
-    "comment": null
+    "comment": null,
+    "altName": "XCOM 2",
+    "region": "US",
+    "latestUpdate": "01.06"
   },
   {
     "name": "Yakuza 6: The Song of Life",
@@ -2797,7 +3394,10 @@
     "version": "01.05",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "YAKUZA 6: The Song of Life",
+    "region": "EU",
+    "latestUpdate": "01.05"
   },
   {
     "name": "Yakuza: Like a Dragon",
@@ -2811,7 +3411,10 @@
     "version": "01.10",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Yakuza: Like A Dragon",
+    "region": "US",
+    "latestUpdate": "01.10"
   },
   {
     "name": "Zanki Zero: Last Beginning",
@@ -2825,6 +3428,9 @@
     "version": "01.03",
     "working": true,
     "dlcs": null,
-    "comment": null
+    "comment": null,
+    "altName": "Zanki Zero: Last Beginning",
+    "region": "EU",
+    "latestUpdate": "01.03"
   }
 ]

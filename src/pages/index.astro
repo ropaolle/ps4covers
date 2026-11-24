@@ -4,13 +4,11 @@ import { getImage } from "astro:assets";
 import GameView, { type GameItem } from "../components/GameView";
 import "../styles/global.css";
 import games from "../data/games.json";
-import manifest from "../data/manifest.json";
 
 const buildNumber = import.meta.env.BUILD_NUMBER ?? "dev";
 const buildDate = new Date().toLocaleDateString("sv-SE");
 const buildTime = new Date().toLocaleString("sv-SE");
 
-// Import all images from src/assets/gallery
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/gallery/**/*.{jpeg,jpg,png,gif,webp,JPEG,JPG,PNG,WEBP}",
   { eager: true },
@@ -32,7 +30,6 @@ const imageMap = new Map(images.map((image) => [image.id, image]));
 
 const gameList: GameItem[] = games.map((game) => {
   const match = imageMap.get(game.id) || imageMap.get("PLACEHOLDER") || { src: "", filename: "", id: "" };
-  const pkgInfo = manifest.Entries.find((entry) => entry.TitleId === game.id && entry.Category === "Game");
 
   return {
     ...game,
@@ -43,9 +40,6 @@ const gameList: GameItem[] = games.map((game) => {
     comment: game.comment ?? "",
     dlcs: game.dlcs ?? "",
     ...match,
-    latestUpdate: pkgInfo?.LatestUpdate ?? "",
-    altName: pkgInfo?.Title ?? "",
-    region: pkgInfo?.Region ?? "",
   };
 });
 
