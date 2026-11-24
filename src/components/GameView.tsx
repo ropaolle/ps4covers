@@ -191,7 +191,7 @@ export default function GameView({ games, genres }: Props) {
 
       {/* Responsive Image Grid */}
       {filteredImages.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {sortedImages().map((img) => (
             <div
               key={img.src}
@@ -261,16 +261,11 @@ export default function GameView({ games, genres }: Props) {
                     Comment: {img.comment}
                   </p>
                 )}
-
-                <div className="flex items-center justify-between pt-2">
-                  <span className="bottom-3 right-3 rounded-md bg-blue-500/75 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                <div className="flex justify-between gap-2 pt-2">
+                  <span className="truncate bg-blue-500/85 text-white px-2 py-1 rounded text-xs font-medium">
                     🏷️ {img.genre}
                   </span>
-                  <img
-                    src={getFlagImage(img.region)}
-                    alt="{img.region}"
-                    className="w-8 h-auto border border-gray-300 rounded-xs"
-                  />
+                  <img src={getFlagImage(img.region)} alt={img.region} className="h-6 w-auto" />
                 </div>
               </div>
             </div>
