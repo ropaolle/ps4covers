@@ -663,6 +663,23 @@
     "latestUpdate": "01.14"
   },
   {
+    "name": "Disco Elysium",
+    "id": "CUSA26591",
+    "size": 14244511744,
+    "genre": "Western RPG",
+    "backup": "DS918",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.14",
+    "working": true,
+    "dlcs": null,
+    "comment": null,
+    "altName": "Disco Elysium",
+    "region": "EU",
+    "latestUpdate": "01.24"
+  },
+  {
     "name": "Disgaea - Hour of Darkness",
     "id": "SLUS20666",
     "size": 586022912,
@@ -1547,6 +1564,23 @@
     "latestUpdate": "01.05"
   },
   {
+    "name": "Jagged Alliance 3",
+    "id": "CUSA35974",
+    "size": 19830603776,
+    "genre": "Turn-Based Tactics",
+    "backup": "DS918",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.51",
+    "working": true,
+    "dlcs": null,
+    "comment": null,
+    "altName": "Jagged Alliance 3",
+    "region": "EU",
+    "latestUpdate": "01.51"
+  },
+  {
     "name": "Kena: Bridge of Spirits",
     "id": "CUSA24853",
     "size": 9782951936,
@@ -2055,6 +2089,23 @@
     "altName": "Owlboy",
     "region": "EU",
     "latestUpdate": "01.03"
+  },
+  {
+    "name": "Pathfinder: Wrath of the Righteous",
+    "id": "CUSA35021",
+    "size": 22235971584,
+    "genre": "Western RPG",
+    "backup": "DS918",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "02.13",
+    "working": true,
+    "dlcs": "Visitors from Morta, The Treasure of the Midnight Isles, Through the Ashes, The Lord of Nothing, The Last Sarkorians, Inevitable Excess, A Dance of Masks",
+    "comment": null,
+    "altName": "Pathfinder: Wrath Of The Righteous",
+    "region": "EU",
+    "latestUpdate": "02.13"
   },
   {
     "name": "Persona 3 Reload",

@@ -20,7 +20,7 @@ export default function GameViewList({ games, selectedGameIds, onToggleSelection
             aria-label={`${selected ? "Deselect" : "Select"} ${game.name}`}
             aria-pressed={selected}
             onClick={() => onToggleSelection(game.id)}
-            className={`flex w-full h-32 items-center gap-4 rounded-lg border p-3 text-left transition sm:gap-6 ${
+            className={`flex w-full h-38 items-center999 gap-4 rounded-lg border p-3 text-left transition sm:gap-6 ${
               selected
                 ? "border-blue-600 bg-blue-50 shadow-md ring-2 ring-blue-400"
                 : "border-gray-200 bg-white shadow-sm hover:bg-gray-50"
@@ -30,44 +30,59 @@ export default function GameViewList({ games, selectedGameIds, onToggleSelection
               src={game.src}
               alt=""
               loading="lazy"
-              className={`h-20 w-20 shrink-0 rounded object-cover sm:h-24 sm:w-24 ${game.working ? "" : "grayscale opacity-25"}`}
+              className={`h-20 w-20 shrink-0 rounded object-cover sm:h-32 sm:w-32 ${game.working ? "" : "grayscale opacity-25"}`}
             />
-            <div className="min-w-0 flex-1">
-              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
-                <span className="truncate font-medium text-gray-900">{game.altName}</span>
+
+            <div className="flex gap-0 flex-col justify-between2 h-full">
+              <div className="flex justify-between items-center">
+                <div className="font-medium text-gray-900">{game.altName}</div>
+                <div className="">
+                  <img
+                    src={getFlagImage(game.region)}
+                    alt={game.region}
+                    className="hidden h-6 w-auto shrink-0 sm:block"
+                  />
+                </div>
               </div>
-              <p className="mt-1 truncate text-sm text-gray-500" title={game.name}>
-                {game.name} · {game.id}
-              </p>
-              <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-600">
-                <span className="font-medium">{game.genre}</span>
-                {game.backup && <span>Backup: {game.backup}</span>}
-                {game.dlcs && <span>DLC: {game.dlcs}</span>}
+              <div className="text-sm text-gray-500">
+                {game.id} · {formatBytes(game.size)} · <span>Backup: {game.backup}</span>
+              </div>
+              <div className="text-sm text-gray-500">
+                {game.dlcs && (
+                  <div>
+                    <span className="font-medium">Dlc's:</span> {game.dlcs}
+                  </div>
+                )}
                 {game.comment && (
-                  <span className="truncate" title={game.comment}>
-                    Comment: {game.comment}
-                  </span>
+                  <div className="">
+                    <span className="font-medium">Comment:</span> {game.comment}
+                  </div>
                 )}
               </div>
-              <div className="mt-2 flex flex-wrap gap-2 text-xs font-medium">
-                {game.owner && <span className="rounded bg-gray-100 px-2 py-1">Owned</span>}
-                {game.completed && <span className="rounded bg-green-100 px-2 py-1 text-green-800">Completed</span>}
-                {game.playing && <span className="rounded bg-blue-100 px-2 py-1 text-blue-800">Playing</span>}
-                {game.latestUpdate !== "No Update" && game.latestUpdate > game.version && (
-                  <span
-                    className="rounded bg-amber-100 px-2 py-1 text-amber-800"
-                    title={`${game.version} (latest ${game.latestUpdate})`}
-                  >
-                    Update available
-                  </span>
-                )}
+              <div className="flex justify-between items-center mt-auto">
+                <div className="truncate rounded bg-blue-500/85 px-2 py-1 text-xs font-medium text-white">
+                  🏷️ {game.genre}
+                </div>
+
+                <div className="text-xs font-medium">
+                  {game.owner && <span className="rounded px-2 py-1 mr-2 rounded bg-blue-100 text-blue-800">Own</span>}
+                  {game.completed && (
+                    <span className="rounded px-2 mr-2 py-1 rounded bg-green-100 text-green-800">Completed</span>
+                  )}
+                  {game.playing && (
+                    <span className="rounded px-2 mr-2 py-1 rounded bg-orange-100 text-orange-800">Playing</span>
+                  )}
+                  {game.latestUpdate !== "No Update" && game.latestUpdate > game.version && (
+                    <span
+                      className="rounded  px-2 py-1 bg-red-100 text-red-800"
+                      title={`${game.version} (latest ${game.latestUpdate})`}
+                    >
+                      Update available
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
-            <div className="flex flex-col justify-between min-h-full">
-              <img src={getFlagImage(game.region)} alt={game.region} className="hidden h-6 w-auto shrink-0 sm:block" />
-              <div className="text-sm text-gray-600">{formatBytes(game.size)}</div>
-            </div>
-            {selected && <span className="shrink-0 text-sm font-semibold text-green-700">Selected</span>}
           </button>
         );
       })}
