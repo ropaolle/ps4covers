@@ -33,7 +33,7 @@ export default function GameViewList({ games, selectedGameIds, onToggleSelection
               className={`h-20 w-20 shrink-0 rounded object-cover sm:h-32 sm:w-32 ${game.working ? "" : "grayscale opacity-25"}`}
             />
 
-            <div className="flex gap-0 flex-col justify-between2 h-full">
+            <div className="flex flex-1 flex-col h-full">
               <div className="flex justify-between items-center">
                 <div className="font-medium text-gray-900">{game.altName}</div>
                 <div className="">
