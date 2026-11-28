@@ -1,5 +1,22 @@
 [
   {
+    "name": "13 Sentinels: Aegis Rim",
+    "id": "CUSA19620",
+    "size": 4484038656,
+    "genre": "Adventure",
+    "backup": "DS216",
+    "owner": null,
+    "completed": true,
+    "playing": null,
+    "version": "01.01",
+    "working": true,
+    "dlcs": null,
+    "comment": "Lite skumt Japanskt äventyr med taktiska strider på en stadskarta.",
+    "altName": "13 Sentinels: Aegis Rim",
+    "region": "EU",
+    "latestUpdate": "01.02"
+  },
+  {
     "name": "A Plague Tale: Innocence PS4",
     "id": "CUSA10812",
     "size": 37326553088,
@@ -1836,6 +1853,23 @@
     "latestUpdate": "01.19"
   },
   {
+    "name": "Mass effect Legendary Edition",
+    "id": "CUSA19500",
+    "size": 85036433408,
+    "genre": "Action RPG, Western RPG",
+    "backup": "DS216",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.03",
+    "working": true,
+    "dlcs": null,
+    "comment": null,
+    "altName": "Mass Effect™ Legendary Edition",
+    "region": "US",
+    "latestUpdate": "01.03"
+  },
+  {
     "name": "Mass Effect: Andromeda",
     "id": "CUSA02684",
     "size": 45309952000,
@@ -1870,6 +1904,23 @@
     "latestUpdate": "01.12"
   },
   {
+    "name": "Middle-earth: Shadow of Mordor",
+    "id": "CUSA00725",
+    "size": 36158373888,
+    "genre": "Open-World Action",
+    "backup": "DS216",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.10",
+    "working": true,
+    "dlcs": null,
+    "comment": null,
+    "altName": "Middle-earth™: Shadow of Mordor™",
+    "region": "US",
+    "latestUpdate": "01.11"
+  },
+  {
     "name": "Monster Hunter: World",
     "id": "CUSA07708",
     "size": 14293860352,
@@ -1902,6 +1953,23 @@
     "altName": "Moonlighter",
     "region": "EU",
     "latestUpdate": "01.16"
+  },
+  {
+    "name": "Moss: Book II",
+    "id": "CUSA23253",
+    "size": 17671913472,
+    "genre": "Action Adventure",
+    "backup": "DS216",
+    "owner": null,
+    "completed": true,
+    "playing": null,
+    "version": "01.07",
+    "working": true,
+    "dlcs": null,
+    "comment": "Fungerar endast med VR.",
+    "altName": "Moss: Book 2",
+    "region": "EU",
+    "latestUpdate": "01.07"
   },
   {
     "name": "Neon White",
@@ -1989,6 +2057,40 @@
     "latestUpdate": "01.07"
   },
   {
+    "name": "Nioh",
+    "id": "CUSA07113",
+    "size": 55252549632,
+    "genre": "Action RPG",
+    "backup": "DS216",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.23",
+    "working": true,
+    "dlcs": "Season pass: Dragon of the North, Defiant Honor, Bloodshed's End",
+    "comment": null,
+    "altName": "Nioh",
+    "region": "US",
+    "latestUpdate": "01.23"
+  },
+  {
+    "name": "Nioh 2",
+    "id": "CUSA15532",
+    "size": 52953350144,
+    "genre": "Action RPG",
+    "backup": "DS216",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.27",
+    "working": true,
+    "dlcs": "The Tengu's Disciple, Darkness in the Capital, The First Samurai",
+    "comment": null,
+    "altName": "Nioh 2",
+    "region": "US",
+    "latestUpdate": "01.27"
+  },
+  {
     "name": "No Man's Sky",
     "id": "CUSA04841",
     "size": 25622609920,
@@ -2055,6 +2157,23 @@
     "altName": "OCTOPATH TRAVELER II",
     "region": "EU",
     "latestUpdate": "01.11"
+  },
+  {
+    "name": "Odin Sphere Leifthrasir",
+    "id": "CUSA05083",
+    "size": 3581673472,
+    "genre": "Action RPG",
+    "backup": "DS216",
+    "owner": null,
+    "completed": true,
+    "playing": null,
+    "version": "01.01",
+    "working": true,
+    "dlcs": null,
+    "comment": "Sidscrollat actionspel med RPG-liknade karaktärsbyggande.",
+    "altName": "Odin Sphere Leifthrasir",
+    "region": "US",
+    "latestUpdate": "01.01"
   },
   {
     "name": "Outer Wilds",
@@ -2803,6 +2922,23 @@
     "altName": "Tearaway™ Unfolded",
     "region": "EU",
     "latestUpdate": "01.04"
+  },
+  {
+    "name": "Terminator 2D: No Fate",
+    "id": "CUSA51101",
+    "size": 1238761472,
+    "genre": "2D Platformer",
+    "backup": "DS918",
+    "owner": null,
+    "completed": null,
+    "playing": null,
+    "version": "01.02",
+    "working": true,
+    "dlcs": null,
+    "comment": null,
+    "altName": "Terminator 2D: NO FATE",
+    "region": "EU",
+    "latestUpdate": "01.03"
   },
   {
     "name": "Terraria",
