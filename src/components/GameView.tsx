@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { formatBytes } from "./GameViewUtils";
 import GameViewGrid from "./GameViewGrid";
 import GameViewList from "./GameViewList";
 
@@ -38,7 +39,7 @@ export default function GameView({ games, genres }: Props) {
   const [selectedGameIds, setSelectedGameIds] = useState<string[]>([]);
   const [view, setView] = useState<"grid" | "list">("grid");
 
-  const filteredImages = games.filter(
+  const filteredGames = games.filter(
     (img) =>
       (!completedOnly || img.completed) &&
       (!playingOnly || img.playing) &&
@@ -48,12 +49,24 @@ export default function GameView({ games, genres }: Props) {
         img.name.toLowerCase().includes(query.toLowerCase().trim())),
   );
 
+  const backupSize = filteredGames.reduce<Record<string, number>>((sum, game) => {
+    if (game.backup in sum) {
+      sum[game.backup] += game.size;
+    } else {
+      sum[game.backup] = game.size;
+    }
+
+    return sum;
+  }, {});
+
+  const totalSize = Object.entries(backupSize).reduce((sum, item) => sum + item[1], 0);
+
   const sortedImages = () => {
-    if (!sort) return filteredImages;
+    if (!sort) return filteredGames;
 
     const direction = sortDirection === "asc" ? 1 : -1;
 
-    return [...filteredImages].sort((a, b) => {
+    return [...filteredGames].sort((a, b) => {
       if (sort === "size") {
         return (a.size - b.size) * direction;
       }
@@ -68,22 +81,29 @@ export default function GameView({ games, genres }: Props) {
   };
 
   const toggleSelection = (id: string) => {
-    setSelectedGameIds((ids) =>
-      ids.includes(id) ? ids.filter((selectedId) => selectedId !== id) : [...ids, id],
-    );
+    setSelectedGameIds((ids) => (ids.includes(id) ? ids.filter((selectedId) => selectedId !== id) : [...ids, id]));
   };
 
+  {
+    /* <p>Total size: {formatBytes(totalSize, 2)}</p> */
+  }
   return (
     <div className="space-y-6">
-      <div className="flex justify-end">
-        <p className="text-sm text-gray-500">
-          Showing {filteredImages.length} of {games.length} games · {selectedGameIds.length} selected
+      <div className="flex text-sm text-gray-500 mt-2">
+        {Object.entries(backupSize).map(([propName, item]) => (
+          <p className="mr-2">
+            <span className="font-medium">{propName}:</span> {formatBytes(item, 2)}
+          </p>
+        ))}
+        <p>(total: {formatBytes(totalSize, 2)})</p>
+        <p className="ml-auto">
+          Showing {filteredGames.length} of {games.length} games · {selectedGameIds.length} selected
         </p>
       </div>
 
       {selectedGameIds.length > 0 && (
-        <div>
-          <p className="text-sm text-gray-500">
+        <div className="absolute top-0 left-0 p-4">
+          <p className="text-sm text-gray-700">
             <span className="font-medium">Selected:</span> {selectedGameIds.join(", ")}
           </p>
         </div>
@@ -189,19 +209,11 @@ export default function GameView({ games, genres }: Props) {
         </div>
       </div>
 
-      {filteredImages.length > 0 ? (
+      {filteredGames.length > 0 ? (
         view === "grid" ? (
-          <GameViewGrid
-            games={sortedImages()}
-            selectedGameIds={selectedGameIds}
-            onToggleSelection={toggleSelection}
-          />
+          <GameViewGrid games={sortedImages()} selectedGameIds={selectedGameIds} onToggleSelection={toggleSelection} />
         ) : (
-          <GameViewList
-            games={sortedImages()}
-            selectedGameIds={selectedGameIds}
-            onToggleSelection={toggleSelection}
-          />
+          <GameViewList games={sortedImages()} selectedGameIds={selectedGameIds} onToggleSelection={toggleSelection} />
         )
       ) : (
         <div className="rounded-lg border border-dashed border-gray-300 p-12 text-center">
